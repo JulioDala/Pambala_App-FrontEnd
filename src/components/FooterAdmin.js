@@ -12,16 +12,16 @@ import { Container, Wrapper, Left, Center, Right, Logo, Title, Desc, SocialConta
 
 const Footer = () => {
     return (
-        <section class="footer">
+        <section className="footer">
 
-            <div class="box-container">
+            <div className="box-container">
 
-                <div class="box">
-                    <a href="#" class="logo"> <i class="fas fa-shopping-bag"></i>  Pambala </a>
+                <div className="box">
+                    <a href="#" className="logo"> <i className="fas fa-shopping-bag"></i>  Pambala </a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique expedita molestiae distinctio facere beatae velit, maiores ullam molestias necessitatibus sapiente.</p>
                 </div>
 
-                <div class="box">
+                <div className="box">
                     <h3>links</h3>
                     <a href="#">Casa</a>
                     <a href="#">Loja</a>
@@ -29,22 +29,22 @@ const Footer = () => {
                     <a href="#">Anunciar</a>
                 </div>
 
-                <div class="box">
+                <div className="box">
                     <h3>contact us</h3>
-                    <p> <i class="fas fa-home"></i>
+                    <p> <i className="fas fa-home"></i>
                         Luanda, Angola,
                     </p>
-                    <p> <i class="fas fa-phone"></i>
+                    <p> <i className="fas fa-phone"></i>
                         +910000000
                     </p>
-                    <p> <i class="fas fa-globe"></i>
+                    <p> <i className="fas fa-globe"></i>
                         pambala@gmail.com
                     </p>
                 </div>
 
             </div>
 
-            <h1 class="credit"> Desenvolvido por <span>Júlio Dala</span> | Todos os direitos reservadoss. </h1>
+            <h1 className="credit"> <span>Copyrigth &copy;</span> 2022 | Todos os direitos reservadoss. </h1>
 
         </section>
 

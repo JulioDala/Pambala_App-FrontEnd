@@ -127,12 +127,14 @@ align-items: center;
 .productCard{
     width: 100%;
     background: #fff;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
 }
 
 .productCard .imgBx{
     position: relative;
     width: 100%;
-    height: 310px;
+    height: 210px;
+    object-fit: cover;
     overflow: hidden;
 }
 
@@ -225,7 +227,7 @@ align-items: center;
     padding: 10px;
 }
 .productCard .productContent .productName h3{
-   font-size: 18px;
+   font-size: 16px;
    font-weight: 500;
    color: #333;
    margin: 5px 0;
@@ -237,8 +239,8 @@ align-items: center;
  }
 
  .productCard .productContent .price_rating h2{ 
-   font-size: 20px;
-   color: var(--blue);
+   font-size: 18px;
+   color: #ff3300;
    font-weight: 500;
   }
   .productCard .productContent .price_rating .rating{ 
@@ -248,143 +250,44 @@ align-items: center;
 
   /* Fim Anúncios recentes  */
 
-.arrival{
-    min-height: 100vh;
-}
-
-.arrival .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:2rem 0;
-    width: 85%;
-    margin:0 auto;
-}
-
-.arrival .box-container .box{
-    flex:1 1 30rem;
-    border:.1rem solid rgba(0,0,0,.3);
-    overflow: hidden;
-    position: relative;
-    margin:1rem 2rem;
-}
-
-.arrival .box-container .box .image{
-    height: 20rem;
-    padding:2rem;
-    text-align: center;
-    background:#f0f0f0;
-}
-
-.arrival .box-container .box .image img{
-    height: 100%;
-    object-fit: cover;
-}
-
-.arrival .box-container .box .info h3{
-    padding:1rem;
-    font-size: 2rem;
-    color:var(--blue);
-}
-
-.arrival .box-container .box .info .subInfo{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:1rem;
-    border-top: .1rem solid rgba(0,0,0,.3);
-}
-
-.arrival .box-container .box .info .subInfo .price{
-    color:#ff3300;
-    font-size: 2rem;
-}
-
-.arrival .box-container .box .info .subInfo .price span{
-    color:#666;
-    font-size: 1.5rem;
-    text-decoration: line-through;
-}
-
-.arrival .box-container .box .info .subInfo .stars i{
-    color:orange;
-    font-size: 1.5rem;
-}
-
-.arrival .box-container .box .overlay{
-    position: absolute;
-    top:0; left: 0;
-    height:20rem;
-    width: 100%;
-    background:rgba(0,0,0,.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0);
-}
-
-.arrival .box-container .box:hover .overlay{
-    transform: scale(1);
-}
-
-.arrival .box-container .box .overlay a{
-    font-size: 2rem;
-    padding:1.5rem 2rem;
-    background:#fff;
-    color:#666;
-    margin:1rem;
-    transform: translateY(-15rem);
-    transition-delay: calc(.1s * var(--i));
-}
-
-.arrival .box-container .box:hover .overlay a{
-    transform: translateY(0rem);
-}
-
-.arrival .box-container .box .overlay a:hover{
-    color:var(--blue);
-}
-
-.feature{
-    min-height: 100vh;
+.featured{
+    min-height: 60vh;
     background:linear-gradient(165deg, #fff 50%, var(--blue) 50.1%);
     padding-bottom: 2rem;
-    display: flex;
-    justify-content: space-between;
 }
 
-.feature .row{
+.featured .rowImage{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     padding:2rem 0;
-    margin:1rem auto;
+    margin:3rem auto;
+    height: 60vh;
     width: 95%;
     background:#fff;
     box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
     border-radius: 1rem;
 }
 
-.feature .row .image-container{
+.featured .rowImage .image-container{
     display: flex;
     align-items: center;
 }
 
-.feature .row .image-container .big-image img{
+.featured .rowImage .image-container .big-image img{
     height: 30rem;
     margin:2rem 0;
     filter: drop-shadow(0 .1rem .5rem #000);
 }
 
-.feature .row .image-container .small-image{
+.featured .rowImage .image-container .small-image{
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
 }
 
-.feature .row .image-container .small-image img{
+.featured .rowImage .image-container .small-image img{
     height:6rem;
     padding: 1rem;
     margin:1rem;
@@ -392,50 +295,50 @@ align-items: center;
     cursor: pointer;
 }
 
-.feature .row .image-container .small-image img.image-active,
-.feature .row .image-container .small-image img:hover{
+.featured .rowImage .image-container .small-image img.image-active,
+.featured .rowImage .image-container .small-image img:hover{
     border:.2rem solid var(--blue);
 }
 
-.feature .row .content{
+.featured .rowImage .content{
     padding-left: 6rem;
 }
 
-.feature .row .content h3{
+.featured .rowImage .content h3{
     font-size: 4rem;
     color:var(--blue);
 }
 
-.feature .row .content .stars i{
+.featured .rowImage .content .stars i{
     font-size: 2rem;
     color:orange;
     padding: 1rem 0;
 }
 
-.feature .row .content .stars span{
+.featured .rowImage .content .stars span{
     font-size: 2rem;
     color:#666;
 }
 
-.feature .row .content p{
+.featured .rowImage .content p{
     color:#333;
     width: 40rem;
     font-size: 2rem;
     padding: 2rem 0;
 }
 
-.feature .row .content .price{
+.featured .rowImage .content .price{
     color:#ff3300;
     font-size: 2rem;
 }
 
-.feature .row .content .price span{
+.featured .rowImage .content .price span{
     color:#666;
     text-decoration: line-through;
     font-size: 1.5rem;
 }
 
-.feature .row .content .btn{
+.featured .rowImage .content .btn{
     margin-left: 2rem;
 }
 

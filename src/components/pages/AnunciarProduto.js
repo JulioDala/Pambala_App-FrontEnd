@@ -73,7 +73,9 @@ function Loja() {
                 type: 'sucess',
                 mensagem: res.data.mensagem
             })
-            window.location.href = '/'
+            if (res.status === 200){
+                window.location.href = '/'
+            }
         } catch (ex) {
             console.log(ex);
             if (ex.res) {

@@ -147,10 +147,10 @@ const DescricaoProduto = () => {
         }
         console.log(data)
         const response = await api.post(`/user/:2/produto/${ident}/avaliar`, data);
-        
+
     };
 
-    const [itensPorPaginas, setItensPorPaginas] = useState(6);
+    const [itensPorPaginas, setItensPorPaginas] = useState(4);
     const [currentePaginas, setCurrentePaginas] = useState(0);
 
     const pages = Math.ceil(produto.length / itensPorPaginas)
@@ -163,8 +163,8 @@ const DescricaoProduto = () => {
         <ThemeProvider theme={mdTheme}>
             {/* Cabeçalho */}
             <Navbar />
-            <Box sx={{ flexGrow: 1, m: 2 }}>
-                <Grid container spacing={2}>
+            <Box sx={{ flexGrow: 1, padding: '0 5px 31px', margin: '20px 80px' }}>
+                <Grid container spacing={9}>
                     {/* Lado esquerdo da Tela */}
                     <Grid item xs={6} md={8}>
                         <section className="feature" id="featured">
@@ -208,12 +208,14 @@ const DescricaoProduto = () => {
                             <br />
                             {avaliacoesP.length > 0 ? (
                                 avaliacoesP.map(avaliacao => {
-                                    return <p key={avaliacao.id}>
-                                          <Avatar alt="Remy Sharp"  src={JAD}  sx={{ width: 24, height: 24 }}/>
-                                          <h5> {localStorage.getItem('&nome-usuario')}</h5>
-                                        <Rating name="estrela" value={avaliacao.estrela}  readOnly/>
-                                        <br />{avaliacao.descricao}
-                                    </p>
+                                    return <div style={{display: 'flex'}} key={avaliacao.id}>
+                                        <Avatar alt="Remy Sharp" src={JAD} sx={{ width: 24, height: 24,mr:1 }} />
+                                        <div>
+                                            <h5> {localStorage.getItem('&nome-usuario')}</h5>
+                                            <Rating name="estrela" value={avaliacao.estrela} readOnly />
+                                            <br />{avaliacao.descricao}
+                                        </div>
+                                    </div>
                                 })
                             ) : (<p>Não existem avaliações para este produto</p>)}
 
@@ -226,7 +228,7 @@ const DescricaoProduto = () => {
                             >
                                 Adicionar Comentário
                             </Typography>
-                            <Rating name="simple-controlled" value={estrelas} onChange={ e => setEstrelas(e.target.value)}/>
+                            <Rating name="simple-controlled" value={estrelas} onChange={e => setEstrelas(e.target.value)} />
                             <TextareaAutosize
                                 aria-label="minimum height"
                                 minRows={6}
@@ -234,7 +236,7 @@ const DescricaoProduto = () => {
                                 value={desc}
                                 placeholder="Corpo da Mensagem"
                                 style={{ width: '100%' }}
-                                onChange={ e => setDesc(e.target.value)}
+                                onChange={e => setDesc(e.target.value)}
                             />
                             <Stack direction="row-reverse" spacing={2}>
                                 <Button sx={{ mt: 3, bgcolor: '#2980b9' }} onClick={handleSubmit} variant="contained" endIcon={<SendIcon />}>
@@ -245,7 +247,7 @@ const DescricaoProduto = () => {
                     </Grid>
 
                     {/* Lado Direito da Tela */}
-                    <Grid item xs={6} md={4} >
+                    <Grid item xs={6} md={4} sx={{}} >
                         <Card elevation={6}
                             sx={{ display: 'flex', flexDirection: 'column' }}
                         >
@@ -263,27 +265,28 @@ const DescricaoProduto = () => {
                         </Card>
 
                         <Card elevation={6}
-                            sx={{ display: 'flex', flexDirection: 'column', mt: 1, alignItems: 'center' }}
+                            sx={{ display: 'flex', flexDirection: 'column', mt: 1, alignItems: 'center', textAlign: 'center' }}
                         >
                             <CardContent sx={{ flexGrow: 1 }}>
-                                <Typography gutterBottom variant="h5" component="h1">
+                                <Typography gutterBottom variant="h5" component="h1" sx={{ m: 'auto' }}>
                                     Informações do pambaleiro
                                 </Typography>
                                 <CardMedia
                                     component="img"
                                     sx={{
 
-                                        height: '100px',
-                                        width: '100px',
-                                        borderRadius: "50%"
+                                        height: '70px',
+                                        width: '70px',
+                                        borderRadius: "50%",
+                                        m: 'auto'
                                     }}
                                     image={JAD}
                                     alt="random"
                                 />
-                                <Typography>
+                                <Typography sx={{ m: 'auto' }}>
                                     Contactos: +244 ### ### ###
                                 </Typography>
-                                <Typography>
+                                <Typography sx={{ m: 'auto' }}>
                                     Localização: Província, Município
                                 </Typography>
                                 <Typography>
@@ -295,7 +298,7 @@ const DescricaoProduto = () => {
                                         }}
                                     />
                                 </Typography>
-                                <Button sx={{ m: 'auto', bgcolor: '#2980b9' }} variant="contained" >
+                                <Button sx={{ mt: '3', bgcolor: '#2980b9' }} variant="contained" >
                                     Ver Perfil
                                 </Button>
                             </CardContent>
@@ -340,7 +343,7 @@ const DescricaoProduto = () => {
                                     </Grid>
                                 ))}
 
-
+                                <a href="#">Ver mais</a>
                             </CardContent>
                         </Card>
 

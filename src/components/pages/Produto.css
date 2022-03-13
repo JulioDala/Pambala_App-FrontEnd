@@ -1,129 +1,86 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
  *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
    font-family:'Open Sans', sans-serif;
  }
- 
-.card{
-    width: 100%;
-    background: #fff;
-}
 
- .card .imgBx{
-    position: relative;
-    width: 100%;
-    height: 310px;
+ .boxI{
+    flex:1 1 25rem;
+    border:.1rem solid rgba(0,0,0,.3);
     overflow: hidden;
+    position: relative;
+    margin:1rem 2rem;
 }
 
- .card .imgBx img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.boxI .image{
+    height: 20rem;
+    padding:2rem;
+    text-align: center;
+}
+.boxI .image img{
     height: 100%;
-    object-fit: cover;
-    transition: 0.5s ease-in-out;
-    transform-origin: right;
+    }
+.boxI .info h3{
+    padding:1rem;
+    font-size: 2rem;
+    color:var(--blue);
 }
-.card:hover .imgBx img{
-    transform: scale(1.5);
+.boxI .info .subInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem;
+    border-top: .1rem solid rgba(0,0,0,.3);
 }
 
-.action{
+.boxI .info .subInfo .price{
+    color:#ff3300;
+    font-size: 2rem;
+}
+
+.boxI .info .subInfo .price span{
+    color:#666;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.boxI .info .subInfo .stars i{
+    color:orange;
+    font-size: 1.5rem;
+}
+
+.boxI .overlay{
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top:0; left: 0;
+    height:20rem;
+    width: 100%;
+    background:rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
 }
 
-.action li{
-   position: relative;
-   list-style: none;
-   width: 40px;
-   height: 40px;
-   background: #dcdcdc;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 4px;
-   cursor: pointer;
-   transition: transform 0.5s;
-   transform: translateX(60px);
+.boxI:hover .overlay{
+    transform: scale(1);
 }
 
-.action li:nth-child(2){
-    transition-delay: 0.15s;
+.boxI .overlay a{
+    font-size: 2rem;
+    padding:1.5rem 2rem;
+    background:#fff;
+    color:#666;
+    margin:1rem;
+    transform: translateY(-15rem);
+    transition-delay: calc(.1s * var(--i));
 }
 
-.action li:nth-child(3){
-    transition-delay: 0.3s;
+.boxI:hover .overlay a{
+    transform: translateY(0rem);
 }
 
- .card:hover .action li{
-    transform: translateX(0px);
+.boxI .overlay a:hover{
+    color:var(--blue);
 }
-
-.action li:hover{
-    background: #ff2020;
-    color: #fff;
- }
-
-.action li span{
-   position: absolute;
-   right: 50px;
-   top: 50px;
-   transform: translateY(-50%) translateX(-20px); 
-   white-space: nowrap;
-   background: #dcdcdc;
-   padding: 4px 6px;
-   color: #333;
-   font-weight: 500;
-   font-size: 12px;
-   border-radius: 4px;
-   pointer-events: none;
-   opacity: 0;
-   transition: 0.5s;
-} 
-
-.action li:hover span{
-    transform: translateY(-50%) translateX(0px); 
-   opacity: 1;
- }
-
- .action li span::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -4px;
-    width: 8px;
-    height: 8px;
-    background: #fff;
-    transform: translateY(-50%) rotate(45deg);
- }
-
- .card .productContent {
-    padding: 10px;
-}
-.card .productContent .productName h3{
-   font-size: 18px;
-   font-weight: 500;
-   color: #333;
-   margin: 5px 0;
-}
-.card .productContent .price_rating{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
- }
-
- .card .productContent .price_rating h2{ 
-   font-size: 20px;
-   color: #ff2020;
-   font-weight: 500;
-  }
-.card .productContent .price_rating .rating{ 
-    color: #ffd513;
-    cursor: pointer;
-   } */

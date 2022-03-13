@@ -1,0 +1,25 @@
+
+.mainCarousel{
+    position: relative;
+}
+.allitem .contents{
+ padding: 15px;
+ float: left;
+ position: relative;
+ margin-top: -355px;
+ color: #fff;
+}
+
+.allItem .contents .title_main{
+    color:#fff;
+    text-shadow: 0 .3rem .5rem #000;
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+
+.allItem .contents p{
+    color:#fff;
+    font-size: 2.5rem;
+    padding:2rem 0;
+    width: 50rem;
+}

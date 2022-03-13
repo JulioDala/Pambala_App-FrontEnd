@@ -63,13 +63,33 @@ function Loja() {
     loadProdutos();
   }, []);
 
-//paginação 
+  const [cat, setCat] = useState([]);
+  const [idCat, setIdCat] = useState('');
+  const [nomeCat, setNomeCat] = useState('');
+
+  useEffect(() => {
+    async function loadProdutos() {
+      const res = await api.get("user/categorias/listar")
+      console.log(res.data);
+      setCat(res.data)
+      setIdCat(res.data.id)
+      setNomeCat(res.data.nome)
+    }
+    loadProdutos();
+  }, []);
+
+  async function filtrar() {
+    const res = await api.get("user/2/produto/listar/filtrar")
+
+  }
+
+  //paginação 
   const [itensPorPaginas, setItensPorPaginas] = useState(9);
   const [currentePaginas, setCurrentePaginas] = useState(0);
 
   const pages = Math.ceil(produto.length / itensPorPaginas)
   const startIndex = currentePaginas * itensPorPaginas;
-  const endIndex =  startIndex + itensPorPaginas;
+  const endIndex = startIndex + itensPorPaginas;
   const currentItens = produto.slice(startIndex, endIndex);
 
   const [age, setAge] = React.useState('');
@@ -117,14 +137,14 @@ function Loja() {
 
                   <FormControl sx={{ my: 1, minWidth: '100%' }}>
                     <InputLabel id="demo-simple-select-filled-label">Categoria</InputLabel>
-                    <Select labelId="demo-simple-select-filled-label" id="demo-simple-select-filled" value={age} onChange={handleChange}
+                    <Select labelId="demo-simple-select-filled-label" id="demo-simple-select-filled" name='categoriumId' value={idCat} onChange={(e) => setIdCat(e.target.value)}
                     >
                       <MenuItem value="">
                         <em>None</em>
                       </MenuItem>
-                      <MenuItem value={10}>Ten</MenuItem>
-                      <MenuItem value={20}>Twenty</MenuItem>
-                      <MenuItem value={30}>Thirty</MenuItem>
+                      {cat.map((item) => (
+                        <MenuItem key={item.id} value={item.id}>{item.nome}</MenuItem>
+                      ))}
                     </Select>
                   </FormControl>
 
@@ -197,7 +217,7 @@ function Loja() {
                     </Select>
                   </FormControl>
 
-                  <Button type="submit" fullWidth variant="contained" sx={{ mt: 3, mb: 2, bgcolor:'#2980b9' }}>
+                  <Button type="submit" fullWidth variant="contained" sx={{ mt: 3, mb: 2, bgcolor: '#2980b9' }} onClick={filtrar}>
                     Pesquisar
                   </Button>
                 </Box>
@@ -210,17 +230,14 @@ function Loja() {
             {/* End hero unit */}
             <Grid container spacing={1}>
               {currentItens.map((produto) => (
-                <Grid item key={produto.id} xs={12} sm={6} md={4}>
-                   <Produto caminho={'http://localhost:3003/Images/' + produto.imagem} stars={3} preco={produto.preco} nome={produto.nome} />
-
-                </Grid>
+                <Produto key={produto.id} caminho={'http://localhost:3003/Images/' + produto.imagem} stars={3} preco={produto.preco} nome={produto.nome} />
               ))}
             </Grid>
           </Grid>
 
         </Grid>
         {/* paginaçãoo */}
-     <Paginacao pages={pages} setCurrentePaginas={setCurrentePaginas}/>
+        <Paginacao pages={pages} setCurrentePaginas={setCurrentePaginas} />
 
       </Box>
       {/* Rodapé */}

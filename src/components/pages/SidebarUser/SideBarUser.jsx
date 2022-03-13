@@ -8,12 +8,15 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import Navbar from '../../layout/Navbar'
 
 export default function SideBarUser() {
-    return (
+    return (  
+        <> 
+        <Navbar />
 
-
-        <div classname="container">
+<div className="containesapce">
+<div classname="container">
             <div className="navigation">
                 <ul>
                     <li>
@@ -68,6 +71,56 @@ export default function SideBarUser() {
                 </ul>
             </div>
         </div>
+
+        <div className="Dados-Perfil">
+                            <h1>Dados do Perfil</h1>
+                            <div className="frm">
+                                <form action="" className="frm-Principal">
+                                    <div className="grp-name">
+                                        <span className="titlo-dados"> Nome: </span>
+                                        <input type="text" className="caixa-dados"/>
+                                    </div>
+
+                                    <div className="grp-contact">
+                                        <div>
+                                            <span className="titlo_dados"> Telefone: </span>
+                                            <input type="text" className="caixa-dados" />
+                                        </div>
+                                        <div>
+                                            <span className="titlo_dados"> E-mail: </span>
+                                            <input type="text" className="caixa-dados" />
+                                        </div>
+
+                                    </div>
+                                    <div className="grp-date">
+                                        <span className="titlo-dados"> Data de Nascimento: </span>
+                                        <input type="datetime" className="caixa-dados" />
+                                    </div>
+                                    <div className="grp-sector">
+                                        <div>
+                                            <span className="titlo-dados"> Provincia: </span>
+                                            <input type="text" className="caixa-dados" />
+                                        </div>
+                                        <div>
+                                            <span className="titlo-dados"> Morada: </span>
+                                            <input type="text" className="caixa-dados" />
+                                        </div>
+
+                                    </div>
+                                    <div className="grp-password">
+                                        <span className="titlo-dados"> Senha: </span>
+                                        <input type="password" className="caixa-dados" />
+                                    </div>
+                                    <div className="grp-btn-Update">
+                                        <input type="button" value="Atualizar" className="btn-dados" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+</div>
+                </>  
+        
     )
 }
 

@@ -131,10 +131,12 @@ header .header-2 .navbar ul li a:hover{
     color:yellow;
 }
 
-header .header-2 .icons a{
+header .header-2 .icons{
     color: #fff;
-    font-size: 1rem;
-    padding: 0 1rem;
+}
+
+header .header-2 .icons .icon{
+    padding-bottom: 20px;
 }
 
 header .header-2 .icons a:hover{

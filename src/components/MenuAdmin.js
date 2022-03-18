@@ -9,7 +9,7 @@ import Tooltip from '@mui/material/Tooltip';
 import Badge from '@mui/material/Badge';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import PeopleIcon from '@mui/icons-material/People';
-import BarChartIcon from '@mui/icons-material/BarChart';
+import BarChartIcon from '@mui/icons-material/Comment';
 import ExitToApp from '@mui/icons-material/ExitToApp';
 import api from './services/api';
 import { getToken, logout } from './services/auth';

@@ -45,6 +45,9 @@ html{
     border-bottom: .2rem solid rgba(0,0,0,.3);
     margin:0 auto;
 }
+.header-1{
+    background: whitesmoke;
+}
 
 .heading span{
     font-size: 2rem;
@@ -81,9 +84,15 @@ header .header-1 .form-container form #search{
     height: 4rem;
     width: 50rem;
     outline: none;
-    border:.2rem solid #666;
+    border:.2rem solid rgb(53, 118, 202);
     font-size: 1.5rem;
     padding:0 1rem;
+
+    border-radius: 10px;
+}
+
+.container-form-container{
+    padding: 5px;
 }
 
 header .header-1 .form-container form #search:focus{
@@ -95,10 +104,13 @@ header .header-1 .form-container form label{
     width: 5rem;
     text-align: center;
     line-height: 4rem;
-    font-size: 2rem;
+    font-size: 100%;
     cursor: pointer;
-    background: var(--blue);
-    color:#fff;
+    color:rgb(53, 118, 202);
+}
+
+.Icon-Search{
+    font-size: 30px !important;
 }
 
 header .header-1 .form-container form label:hover{
@@ -106,7 +118,7 @@ header .header-1 .form-container form label:hover{
 }
 
 header .header-2{
-    background:var(--blue);
+    background: rgb(53, 118, 202);
 }
 
 header .header-2 .navbar ul{
@@ -137,6 +149,16 @@ header .header-2 .icons a{
     padding: 0 1rem;
 }
 
+.icons-icons{
+    color: white !important;
+        margin-right: 5px;
+        font-size: 200% !important;
+}
+
+.icons-Avatar{
+        margin-right: 5px;
+        width: 1000px;
+}
 header .header-2 .icons a:hover{
     color:yellow;
 }

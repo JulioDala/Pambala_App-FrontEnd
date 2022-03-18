@@ -8,6 +8,10 @@ import Entrar from './pages/Entrar';
 // import Navbar from './layout/Navbar';
 import Cadastrar from './pages/Cadastrar';
 import SideBarUser from './pages/SidebarUser/SideBarUser';
+import Usuario from './pages/SidebarUser/Usuario/Usuario';
+import Favorito from './pages/SidebarUser/Favoritos/Favorito';
+import Promocao from './pages/SidebarUser/Promocao/Promocao';
+import Anunciados from './pages/SidebarUser/Anunciados/Anunciados';
 import AnunciarProduto from './pages/AnunciarProduto';
 import DescricaoProduto from './pages/DescricaoProduto';
 import Notificacoes from './pages/Notificacoes';
@@ -24,6 +28,8 @@ import CadastrarAdmin from './pages/admin/Usuarios/CadastrarAdmin';
 import Listar from './pages/admin/Usuarios/Listar';
 
 import PrivateRoute from './services/WAuth';
+import Conta from './pages/Conta';
+import Promocoes from './pages/Promocoes';
 
 function Rotas() {
   return (
@@ -38,6 +44,12 @@ function Rotas() {
         <Route element={<Entrar />} path="/Entrar" exact />
         <Route element={<Cadastrar />} path="/Cadastrar"/>
         <Route element={<SideBarUser />} path="/Perfil" />
+        <Route element={<Usuario />} path="/Perfil/Usuario" />
+        <Route element={<Favorito />} path="/Perfil/Favorito" />
+        <Route element={<Promocao />} path="/Perfil/Promocao" />
+        <Route element={<Anunciados />} path="/Perfil/Anunciados" />
+        <Route element={<Promocoes />} path="/Perfil/Promocoes" />
+        <Route element={<Conta />} path="/Conta" />
         <Route element={<Notificacoes />} path="/Perfil/Notificacoes"/>
         <Route element={<Anuncios />} path="/Perfil/Anuncios"/>
         <Route element={<Favoritos />} path="/Perfil/Favoritos" />

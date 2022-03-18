@@ -10,6 +10,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Paper from '@mui/material/Paper';
+import Person from "@mui/icons-material/Person";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import api from '../services/api';
@@ -46,7 +47,7 @@ function Entrar() {
 
     <ThemeProvider theme={theme}>
       {/* Cabeçalho */}
-      <Navbar />
+
       <Container component="main" maxWidth="xs">
         <Box
           sx={{
@@ -56,12 +57,12 @@ function Entrar() {
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <LockOutlinedIcon />
-          </Avatar>
+
           <Paper elevation={3} sx={{ p: 4 }}>
             <Typography component="h1" variant="h5">
-              Iniciar  Sessão
+              <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+                <Person />
+              </Avatar>
             </Typography>
             <TextField
               margin="normal"

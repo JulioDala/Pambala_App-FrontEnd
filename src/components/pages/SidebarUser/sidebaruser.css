@@ -1,4 +1,4 @@
-:root{
+ :root{
     --main-color: #c30000;
     --color-dark: gray;
     --text-grey: green;
@@ -12,6 +12,7 @@
     --blue: #3968d4;
 }
 
+/*
 *{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
@@ -25,8 +26,8 @@ body{
 }
 
 .container{
-
     width: 100%;
+    background-color: #c30000;
 }
 .navigation{
     position: absolute;
@@ -142,9 +143,103 @@ body{
 
 /* OUTSIDE*/
 
-.navigation.active{
+/* .navigation.active{
     width: 80px;
+} */
+
+
+/* NOVO CSS*/
+
+.container-user{
+    
+    background-color: rgb(202, 202, 202);
+    width: 100%;
+    margin-top: 0;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+ 
+}
+.container-user-Date{
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
+.container-user-Date .user-image-photo{
+    border-radius: 50%;
+    border: #3968d4 2px solid;
+    width: 60%;
+}
+.Link-user{
+    list-style: none;
+    text-decoration: none;
+}
+.container-user-photo-user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-user-Date .user-name-user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-/* PRINCIPAL*/
+    margin-top: 5px;
+    font-size: 150%;
+}
+
+.container-user-Date .container-user-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-user-Date .container-user-button .user-button-edit{
+    background: #3968d4;
+    color: var(--white);
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    padding: 2%;
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.container-user-Date .container-user-button .user-button-edit:hover{
+    background: #5d86e4;
+    color: var(--white);
+  
+}
+
+.container-ul ul{
+    list-style: none;
+    font-size: 150%;
+}
+
+.container-ul ul li{
+    padding: 10px;
+    color: #3968d4;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 100%;
+    font-weight: 300;
+}
+
+.container-ul ul li i{
+    margin-right: 10px;
+    display: flex;
+}
+
+.li-Icon{
+    font-size: 110% !important;
+
+}
+
+.container-ul ul li:hover{
+   background-color: #3968d4;
+   color: white;
+   border-bottom-left-radius: 50px;
+   border-top-left-radius: 50px;
+   border-bottom-right-radius: -50px;
+   border-top-right-radius: -50px;
+}

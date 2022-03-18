@@ -1,12 +1,12 @@
 import * as React from 'react';
-import {Link} from 'react-router-dom';
-import'./Navbar.css';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import ChatIcon from '@mui/icons-material/Chat';
+import ChatIcon from '@mui/icons-material/Comment';
 import SearchIcon from '@mui/icons-material/Search';
 import JAD from '../../img/JAD.jpeg';
 
@@ -43,10 +43,15 @@ const ResponsiveAppBar = () => {
         <a href="#" class="logo"> <i class="fas fa-shopping-bag"></i>  Pambala </a>
 
         <div class="form-container">
-          <form action="">
-            <input type="search" placeholder="Pesquisar produtos..." id="search" />
-            <label for="search"> <SearchIcon/></label>
-          </form>
+
+          <div className='container-form-container'>
+            <form action="">
+              <input type="search" placeholder="Pesquisar produtos..." id="search" />
+              <label for="search"> <SearchIcon className='Icon-Search' /></label>
+
+            </form>
+          </div>
+
         </div>
 
       </div>
@@ -59,21 +64,22 @@ const ResponsiveAppBar = () => {
           <ul>
             <li> <Link to="/">Início</Link> </li>
             <li><Link to="/Loja">Produtos</Link></li>
-            <li><Link to="/Anunciar%20Produto"> Criar Anuncio</Link></li>
+            <li><Link to="/Anunciar%20Produto"> Anunciar</Link></li>
+            <li><Link to="/Perfil/Usuario"> Conta</Link></li>
             <li><Link to="/Contacto">Contacto</Link></li>
-          
+
             <li>  {localStorage.getItem('&app-token') ? <Link to="/">Sair</Link> : <Link to="/Entrar">Entrar</Link>}  </li>
-           
+
           </ul>
         </nav>
 
         <div class="icons">
-            <FavoriteIcon/>
-            <NotificationsIcon/>
-            <ChatIcon/>
+          <FavoriteIcon className='icons-icons' />
+          <NotificationsIcon className='icons-icons'  />
+          <ChatIcon className='icons-icons'  />
           <Tooltip title="Open settings">
-            <IconButton sx={{ p: 0 }}>
-              <Avatar alt="Remy Sharp"  src={JAD}  sx={{ width: 24, height: 24 }}/>
+            <IconButton  sx={{ p: 0 }}>
+              <Avatar alt="Remy Sharp" src={JAD} sx={{ width: 50, height: 50, border: 2 }} />
             </IconButton>
           </Tooltip>
         </div>

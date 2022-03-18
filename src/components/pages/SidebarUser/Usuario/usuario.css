@@ -1,0 +1,107 @@
+:root{
+    --fundo: rgb(235, 235, 235);
+    --bordas: rgb(53, 118, 202);
+    --fonte:  rgb(53, 118, 202);
+    --cinza: rgb(195, 195, 195);
+}
+.container-usr{
+    display: flex;
+}
+.usuario{
+    background-color: white;
+    border: rgb(224, 224, 224) 2px solid;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+}
+.container-usr-box{
+    padding: 5px;
+    width: 100%;
+}
+
+.container-usuario-foto{
+    padding: 5px;
+}
+.container-usuario-foto .usuario-usuario-foto{
+    border-radius: 50%;
+    border: 2px solid var(--bordas);
+    background: var(--bordas);
+    width: 150px;
+}
+
+.usuario-usuario{
+    padding: 5px;
+    display: flex;
+    justify-content: left;
+}
+
+.usuario-usuario-nome{
+    color: var(--fonte);
+    font-weight: 600;
+    font-size: 150%;
+}
+
+.btn-edit-user{
+    height: 20px;
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    
+    background: var(--bordas);
+    margin: 0px;
+}
+.usuario-usuario-space{
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 110%;
+}
+
+.usuario-icon-item{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.usuario-icon{
+    margin-right: 5px;
+}
+
+.container-usuario-editar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    margin: 10px;
+}
+
+.usuario-usuario-notificacao{
+    font-size: 150%;
+}
+
+.container-usuario-icon{
+    padding: 5px;
+    display: flex;
+    justify-content: right;
+}
+
+table{
+    align-items: center;
+}
+table th{
+    align-items: center;
+    text-align: center;
+}
+table tr{
+    width: 100%;
+}
+
+table tr td{
+    text-align: center;
+    padding: 10px;
+}

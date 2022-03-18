@@ -1,0 +1,17 @@
+.modalbody-foto{
+    display: flex;
+    justify-content: center;
+}
+.imageProduto{
+    width: 50%;
+}
+
+.precoProduto{
+    font-size: 200% !important;
+    font-weight: 600;
+}
+
+.modalbody-descricao{
+    margin-top: 20px;
+    font-weight: 600;
+}

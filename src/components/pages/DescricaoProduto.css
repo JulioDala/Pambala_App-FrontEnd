@@ -210,27 +210,35 @@ html{
     justify-content: space-between;
 }
 
+.feature{
+    min-height: 70vh;
+    background:linear-gradient(165deg, #fff 50%, var(--blue) 50.1%);
+    padding-bottom: 2rem;
+}
+
 .feature .row{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     padding:2rem 0;
-    margin:1rem auto;
-    width: 100%;
+    margin:3rem auto;
+    height: 65vh;
+    width: 95%;
     background:#fff;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
     border-radius: 1rem;
 }
 
 .feature .row .image-container{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .feature .row .image-container .big-image img{
-    height: 100vh;
-    margin:1rem 0;
-    width: 50vw;
+    height: 30rem;
+    margin:2rem 0;
     filter: drop-shadow(0 .1rem .5rem #000);
 }
 
@@ -241,8 +249,7 @@ html{
 }
 
 .feature .row .image-container .small-image img{
-    height:10rem;
-    width: 7vw;
+    height:6rem;
     padding: 1rem;
     margin:1rem;
     border:.1rem solid #666;

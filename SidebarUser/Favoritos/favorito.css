@@ -1,0 +1,96 @@
+:root{
+    --fundo: rgb(235, 235, 235);
+    --bordas: rgb(53, 118, 202);
+    --fonte:  rgb(53, 118, 202);
+    --cinza: rgb(195, 195, 195);
+}
+.container-fvt{
+    display: flex;
+}
+.favorito{
+    background-color: white;
+    border-bottom: rgb(224, 224, 224) 2px solid;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+}
+.container-fvt-box{
+    padding: 5px;
+    width: 100%;
+}
+
+.container-favorito-foto{
+    padding: 5px;
+}
+.container-favorito-foto .favorito-favorito-foto{
+    
+    border-top: 2px solid var(--bordas);
+    width: 130px;
+}
+
+.favorito-favorito{
+    padding: 5px;
+    display: flex;
+    justify-content: left;
+}
+
+.favorito-favorito-nome{
+    color: var(--fonte);
+    font-weight: 600;
+    font-size: 150%;
+}
+
+.btn-edit-favorito{
+    height: 20px;
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    
+    background: var(--bordas);
+    margin: 0px;
+}
+.favorito-favorito-space{
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 110%;
+}
+.favorito-favorito-preco{
+    font-weight: 600;
+}
+.container-favorito-editar{
+    color: var(--bordas) !important;
+    display: flex;
+    justify-content: space-between;
+
+    margin: 10px;
+}
+
+.favorito-favorito-notificacao{
+    font-size: 150%;
+}
+
+.container-favorito-icon{
+    padding: 5px;
+    color: var(--bordas) !important;
+    display: flex;
+    justify-content: right;
+}
+
+.star-icon{
+    color: var(--bordas) !important;
+}
+.star-icon:hover{
+    color: yellow !important;
+    cursor: pointer;
+    border: blue;
+}
+.favorite-icon{
+    color: var(--bordas) !important;
+    font-size: 20px !important;
+}

@@ -37,7 +37,7 @@ function Entrar() {
         login(response.data.token);
         setIdUsuario(response.data.id)
         setNomeUsuario(response.data.nome)
-        window.location.href = '/admin'
+        window.location.href = '/admin/estatisticas'
       }
     } else if (response.status === 400) {
       alert('Erro ao cadastrar o usuário')

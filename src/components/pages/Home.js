@@ -105,8 +105,8 @@ function Home() {
           </div>
         </div>
         <h1 className="heading"> <span> Produto em Destaque </span> </h1>
-        <section data-aos="fade-left" className="feature" id="featured">
-          <div className="row">
+        <section data-aos="fade-left" className="featured" id="featured">
+          <div className="rowImage">
             <div className="image-container">
               <div className="big-image">
                 <img src={watch1} alt="" />
@@ -161,7 +161,7 @@ function Home() {
           </div>
 
         </section>
-        <section5 className="newsletter">
+        <section className="newsletter">
 
           <h1>Avalie-nos</h1>
           <p>Avalie-nos e ajude-nos a melhorar</p>
@@ -170,7 +170,7 @@ function Home() {
             <input type="submit" className="btn" />
           </form>
 
-        </section5>
+        </section>
 
       </Box>
       {/* Rodapé */}

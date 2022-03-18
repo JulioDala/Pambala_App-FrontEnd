@@ -74,12 +74,21 @@ const ResponsiveAppBar = () => {
         </nav>
 
         <div class="icons">
+<<<<<<< HEAD
           <FavoriteIcon className='icons-icons' />
           <NotificationsIcon className='icons-icons'  />
           <ChatIcon className='icons-icons'  />
           <Tooltip title="Open settings">
             <IconButton  sx={{ p: 0 }}>
               <Avatar alt="Remy Sharp" src={JAD} sx={{ width: 50, height: 50, border: 2 }} />
+=======
+            <FavoriteIcon sx={{ width: 22, height: 22,ml:0.5,borderRadius: '50%',lineHeight:20 }}/>
+            <NotificationsIcon sx={{ width: 22, height: 22,ml:0.5,borderRadius: '50%' }}/>
+            <ChatIcon sx={{ width: 22, height: 22,ml:0.5,borderRadius: '50%' }}/>
+          <Tooltip title="Perfil">
+            <IconButton sx={{ p: 0 }}>
+              <Link to="/Perfil"><Avatar alt="Remy Sharp"  src={JAD}  sx={{ width: 23, height: 23,ml:0.5 }}/></Link>
+>>>>>>> 1531a037e1884ae749b9a1a8142616285540abde
             </IconButton>
           </Tooltip>
         </div>

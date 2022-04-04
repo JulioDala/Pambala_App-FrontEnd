@@ -5,6 +5,7 @@ import EmailIcon from '@mui/icons-material/Email'
 import Room from '@mui/icons-material/Room'
 import TwitterIcon from '@mui/icons-material/Twitter';
 import './styleFooter.css';
+import Logotipo from "../../src/logo.png"
 
 import React from 'react';
 
@@ -17,25 +18,25 @@ const Footer = () => {
             <div className="box-container">
 
                 <div className="box">
-                    <a href="#" className="logo"> <i className="fas fa-shopping-bag"></i>  Pambala </a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique expedita molestiae distinctio facere beatae velit, maiores ullam molestias necessitatibus sapiente.</p>
+                    <a href="/" className="logo"> <img src={Logotipo} className="Logotipo" alt='' /> <span className="Logo-Title"> Pambala </span>  </a>
+                    <p className="Descrition-logo">Uma nova plataforma eficiente e sustentavel, desenvolvida para o rico beneficio dos seus usuarios, para que possam divulgar os seus produtos e dar a conhecer os seus serviços.</p>
                 </div>
 
                 <div className="box">
-                    <h3>links</h3>
+                    <h3>Acessos</h3>
                     <a href="#">Casa</a>
                     <a href="#">Loja</a>
-                    <a href="#">Contacto</a>
+                    <a href="#">Perfil</a>
                     <a href="#">Anunciar</a>
                 </div>
 
                 <div className="box">
-                    <h3>contact us</h3>
+                    <h3>Contactos</h3>
                     <p> <i className="fas fa-home"></i>
-                        Luanda, Angola,
+                        Luanda, Angola
                     </p>
                     <p> <i className="fas fa-phone"></i>
-                        +910000000
+                        +244 923 000 100
                     </p>
                     <p> <i className="fas fa-globe"></i>
                         pambala@gmail.com
@@ -44,7 +45,7 @@ const Footer = () => {
 
             </div>
 
-            <h1 className="credit"> <span>Copyrigth &copy;</span> 2022 | Todos os direitos reservadoss. </h1>
+            <h1 className="credit"> <span>Copyrigth &copy;</span> 2022 | Todos os direitos reservados. </h1>
 
         </section>
 

@@ -1,0 +1,55 @@
+.ContentUser2{
+    padding: 0;
+    margin: 5% 0 5% 0;
+}
+
+.ContentUser2 .ContentUser2-Title{
+ text-align: center;
+}
+
+.ContentUser2 .ContentUser2-Title h1{
+    font-weight: bold;
+   }
+
+   .ContentUser2 .ContentUser2-Title h4{
+    text-transform: initial;
+   }
+
+.Details-ContentUser2{
+    display: flex;
+    border: 2px solid whitesmoke;
+
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.Details-ContentUser2 .Photo-Produt-2{
+    width: 20%;
+}
+
+.Details-ContentUser2 .Details-ContentUser2-2{
+    display: block;
+    padding: 10px;
+}
+
+.Details-ContentUser2 .Details-ContentUser2-3{
+    padding: 10px;
+}
+
+.Details-Produts{
+    display: flex;
+    width: 100%;
+}
+
+.Produt-Photo{
+    width: 100%;
+}
+
+.Details-ContentUser2-3 button{
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    width: 50%;
+}

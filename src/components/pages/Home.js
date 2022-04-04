@@ -148,8 +148,8 @@ function Home() {
 
             <div class="icons">
               <i class="fas fa-money-check-alt"></i>
-              <h3>easy payments</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, molestiae?</p>
+              <h3>Pagamentos</h3>
+              <p>Apartir dos melhores preços, pague os pacotes para promover os seus produtos</p>
             </div>
 
             <div class="icons">
@@ -167,7 +167,7 @@ function Home() {
           <p>Avalie-nos e ajude-nos a melhorar</p>
           <form action="">
             <input type="email" placeholder="Digite seu email" />
-            <input type="submit" className="btn" />
+            <input type="submit" className="btn" value="Avaliar" />
           </form>
 
         </section>

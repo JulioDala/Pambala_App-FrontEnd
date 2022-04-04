@@ -1,0 +1,88 @@
+.MenuUserP{
+    height: 100vh;
+    width: 35vh;
+}
+.MenuUser{
+    margin-top: 14vh;
+    height: 100vh;
+    position: fixed;
+    
+    background: rgb(0, 0, 0, 0.6);
+    width: 35vh;
+
+    border-right: 2px solid rgb(0, 0, 0, 0.6);
+}
+
+.MenuUser .usrNavigation{
+  position: sticky;
+    
+}
+
+.usrNavigation header{
+    padding: 10px;
+
+}
+
+.usrNavigation nav ul{
+    margin-top: 10%;
+    list-style: none;
+    text-decoration: none;
+}
+
+.usrNavigation nav ul li{
+    margin: 0 0 0 10px;
+    text-decoration: none;
+}
+ 
+.usrNavigation nav ul .Link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: 600;
+    color: rgb(0, 0, 0, 0.6);
+}
+
+.usrNavigation nav ul .Link:hover{
+    background-color: rgb(0, 0, 0, 0.6);
+    color: white;
+}
+
+.imgPhoto{
+    border: 2px solid rgb(0, 0, 0, 0.6);
+    width: 80%;
+    border-radius: 50%;
+}
+
+.mcPhoto{
+    display: flex;
+    align-items: baseline;
+    padding: 10px;
+}
+
+.ccCamera{
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    background: rgb(0, 0, 0, 0.6);
+    position: absolute;
+    top: 145px;
+    left: 110px;
+}
+
+.mcaPhoto{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.mcaPhoto button{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+
+    background: rgb(0, 0, 0, 0.6);
+    color: white;
+}

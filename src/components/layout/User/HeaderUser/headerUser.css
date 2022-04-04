@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+}
+.Container-Header{
+    margin-bottom: 40px;
+    height: 80vh;
+    background: url(../../../../img/luanda-angola.jpg) no-repeat;
+       
+}
+
+.Container-Header-nav{
+    background: rgba(0, 0, 0, 0.459);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+}
+
+.Container-Header .Container-Header-nav .Container-Nav{
+    width: 100%;
+}
+
+.Container-Header .Container-Header-nav .ContainerLogo{
+    margin: 0 1% 0 5%;
+}
+
+.Container-Header .Container-Header-nav .ContainerLogo span{
+    color: white;
+}
+
+.Container-Header .Container-Header-nav .Photo-Logo{
+    width: 60px;
+}
+
+.Container-Header .Container-Header-nav .Container-Nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Container-Header .Container-Header-nav .Container-Nav .Content-navBar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Container-Header .Container-Header-nav .Container-Nav .Content-Search{
+    display: flex;
+    width: 100%;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+}
+
+.Container-item-user{
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+.Container-Header .Container-Header-nav .Container-Nav .Content-Search form{
+    width: 100%;
+    display: flex;
+}
+
+.Container-Header .Container-Header-nav .Container-Nav .Content-Search form input{
+    border: none;
+    background: transparent;
+    padding: 10px;
+    width: 100%;
+}
+
+.Container-Header .Container-Header-nav .Container-Nav .Content-Search form input:focus{
+    border: none;
+    background: transparent;
+}
+
+.Container-Header .Container-Header-nav .Container-Nav .Content-Search form button{
+    border: none;
+    background: #ccc;
+    padding: 10px;
+}
+
+.Container-Header .Container-Header-nav .nav-header ul{
+    list-style: none;
+    display: flex;
+    text-decoration: none !important;
+    text-transform: none;
+
+}
+
+.Container-Header .Container-Header-nav .nav-header ul li{
+    color: white;
+    margin: 0 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.Container-Header .Container-Header-nav .nav-header ul li:hover{
+   color: rgba(255, 255, 255, 0.513);
+   cursor: pointer;
+}
+
+.LinkMenu{
+    text-decoration: none;
+}
+
+.Container-Header-Filter{
+    margin: 5%;
+}
+
+.Container-Title-Text{
+    text-align: center;
+}
+
+.Container-Title-Text h4{
+    text-transform: initial;
+}
+
+.Container-Title-Text h1{
+    font-weight: bold;
+}
+
+.Container-form-select form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container-form-select form select{
+    margin: 10px;
+    width: 15%;
+    font-size: 18px;
+    padding: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.Container-Header-Services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-icon{
+    background: rgba(0, 0, 0, 0.6);
+    margin: 0 5px 0 5px;
+    color: white;
+    padding: 4%;
+    border-radius: 5px;
+}
+
+.service-icon:hover{
+    cursor: pointer;
+    background: rgba(30, 30, 30, 0.664);
+
+}
+
+.icon-service{
+    font-size: 60px !important;
+}

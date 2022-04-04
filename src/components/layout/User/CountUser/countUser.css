@@ -1,0 +1,12 @@
+.Container-content{
+    display: block;
+}
+
+.cc{    
+    display: flex;
+    justify-content: space-between;
+}
+
+.cc-B{
+    flex: 1;
+}

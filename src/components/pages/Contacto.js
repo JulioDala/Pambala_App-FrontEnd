@@ -50,7 +50,7 @@ function Contacto() {
             {/* End hero unit */}
 
             <Grid item xs={6} sm={6} md={6}>
-              <Typography gutterBottom variant="h5" component="div" position="rigth">
+              <Typography gutterBottom variant="h5" component="div" position="rigth" >
                 Informações de Contacto
               </Typography>
               <ListItem >
@@ -59,7 +59,7 @@ function Contacto() {
                     <PlaceIcon />
                   </Tooltip >
                 </ListItemIcon>
-                <ListItemText primary="Luanda,Angola" />
+                <ListItemText primary="Luanda, Angola" />
 
               </ListItem>
               <ListItem >
@@ -69,7 +69,7 @@ function Contacto() {
                   </Tooltip >
                 </ListItemIcon>
 
-                <ListItemText primary="+244 928038663" />
+                <ListItemText primary="+244 928 038 663" />
               </ListItem>
               <ListItem >
                 <ListItemIcon>

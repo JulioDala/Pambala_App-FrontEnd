@@ -11,6 +11,11 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Paper from '@mui/material/Paper';
 import Person from "@mui/icons-material/Person";
+import Logo from '../../logo.png';
+import './entrar.css';
+import {useState} from 'react';
+import Sign from './ModalCadastro/ModalSign';
+
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import api from '../services/api';
@@ -23,6 +28,7 @@ function Entrar() {
 
   const [email, setEmail] = React.useState('')
   const [senha, setSenha] = React.useState('')
+  const [openModalSign, setOpenModalSign] = useState(true);
 
   async function handleSubmit() {
     const response = await api.post('/user/login', { email, senha });
@@ -47,24 +53,30 @@ function Entrar() {
 
     <ThemeProvider theme={theme}>
       {/* Cabeçalho */}
-
-      <Container component="main" maxWidth="xs">
+      { openModalSign && <Sign closeModal={setOpenModalSign} />}  
+      
+      <Container component="main" maxWidth="xs" maxHeight="xs">
         <Box
           sx={{
-            marginTop: 6,
+            marginTop: 15,
+            marginBottom: 15,
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'center',
+            alignItems: 'center',            
           }}
         >
-
-          <Paper elevation={3} sx={{ p: 4 }}>
-            <Typography component="h1" variant="h5">
-              <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-                <Person />
-              </Avatar>
-            </Typography>
-            <TextField
+          <Paper elevation={4} sx={{ p: 4 }}>
+            <div>
+              <div className='container-img-Logo'>
+                <img src={Logo} alt='' className='img-Logo' />
+              </div>
+              <div className='container-img-Logo'>
+                <span className="Logo-Title" > PAMBALA </span>
+              </div>
+              
+            </div>
+           
+            <TextField className='text-field'
               margin="normal"
               required
               fullWidth
@@ -90,9 +102,10 @@ function Entrar() {
             />
             <Button
               type="submit"
+              className='btn-send'
               fullWidth
               variant="contained"
-              sx={{ mt: 1, mb: 2, py: 1, bgcolor: ' #2980b9' }}
+              sx={{ mt: 1, mb: 1, py: 1, bgcolor: ' rgb(53, 118, 202)', fontSize: 12, fontWeight: 600 }}
               onClick={handleSubmit}
             >
               Entrar
@@ -104,7 +117,7 @@ function Entrar() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link component="a" href="/Cadastrar" variant="body2">
+                <Link component="a" onClick={() => {setOpenModalSign(true);}} variant="body2" className='Link-Acess'>
                   {"Não tens uma conta? Cadastre-se"}
                 </Link>
               </Grid>

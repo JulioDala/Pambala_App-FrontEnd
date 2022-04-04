@@ -522,12 +522,14 @@ align-items: center;
 .newsletter h1{
     color:#fff;
     font-size: 4rem;
+    text-transform: initial;
 }
 
 .newsletter p{
     color:#fff;
     font-size: 2rem;
     padding:1rem 0;
+    text-transform: initial;
 }
 
 .newsletter form{
@@ -555,6 +557,7 @@ align-items: center;
 
 .newsletter form input[type="submit"]{
     border-radius: 5rem;
+    background: rgb(53, 118, 202);
 }
 
 .footer .box-container{

@@ -1,0 +1,39 @@
+:root{
+    --cor: rgb(53, 118, 202);
+}
+body{
+    overflow-y: hidden;
+}
+.container-img-Logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-Logo{
+    background: var(--cor);
+    border-radius: 20%;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+}
+.Logo-Title{
+    font-size: 150%;
+    font-weight: 600;
+    color: var(--cor);
+}
+.LogoP{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.btn-send{
+    font-size: 200%;
+    font-weight: 600;
+}
+.Link-Acess{
+    text-decoration: none;
+    list-style: none;
+    text-transform: none;
+    color: black;
+    font-size: 100%;
+}

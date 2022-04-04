@@ -31,6 +31,10 @@ import PrivateRoute from './services/WAuth';
 import Conta from './pages/Conta';
 import Promocoes from './pages/Promocoes';
 
+/* Importações da Conta Do Usuario */
+import IndexUser from './layout/User/IndexUser/IndexUser';
+import CountUser from './layout/User/CountUser/CountUser';
+
 function Rotas() {
   return (
     <Router>
@@ -55,6 +59,10 @@ function Rotas() {
         <Route element={<Favoritos />} path="/Perfil/Favoritos" />
         <Route element={<AnunciarProduto /> } path="/Anunciar%20Produto"  />
         <Route element={<DescricaoProduto />} path="/Produto/:ident" exact />
+
+        {/* Rotas da Conta Do Usuario */}
+        <Route element={<IndexUser />} path="/index/usuario" exact />
+        <Route element={<CountUser />} path="/index/usuario/Conta" exact />
 
         {/* Rotas do admin */}
         <Route element={<Dashboard />} path="/admin" exact />

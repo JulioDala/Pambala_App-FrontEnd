@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
 :root{
-    --blue:#2980b9;
+    --blue:rgb(53, 118, 202);
 }
 
 *{
@@ -11,6 +11,15 @@
     text-transform: capitalize;
     text-decoration: none;
     transition: all .2s cubic-bezier(.37,1.14,.26,1.24);
+}
+.Logo-Logotipo{
+    width: 6%;
+    background: rgb(53, 118, 202);
+    border-radius: 20%;
+    display: block;
+}
+.Container-Avatar{
+    border: white solid 2px !important;
 }
 
 *::selection{
@@ -46,7 +55,7 @@ html{
     margin:0 auto;
 }
 .header-1{
-    background: whitesmoke;
+    background: rgb(44, 44, 44);
 }
 
 .heading span{
@@ -84,15 +93,16 @@ header .header-1 .form-container form #search{
     height: 4rem;
     width: 50rem;
     outline: none;
-    border:.2rem solid rgb(53, 118, 202);
+    border: 0;
     font-size: 1.5rem;
     padding:0 1rem;
-
-    border-radius: 10px;
+    background: transparent;
+    color: rgb(180, 182, 185) !important;    
 }
 
 .container-form-container{
-    padding: 5px;
+    border:.2rem solid rgb(180, 182, 185);
+    border-radius: 10px;
 }
 
 header .header-1 .form-container form #search:focus{
@@ -106,11 +116,15 @@ header .header-1 .form-container form label{
     line-height: 4rem;
     font-size: 100%;
     cursor: pointer;
-    color:rgb(53, 118, 202);
+    background: #e6e4e4;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .Icon-Search{
     font-size: 30px !important;
+    color: rgb(180, 182, 185) !important;
+    
 }
 
 header .header-1 .form-container form label:hover{
@@ -121,21 +135,48 @@ header .header-2{
     background: rgb(53, 118, 202);
 }
 
+header .header-2 .navBar ul{
+        display: flex;
+        list-style: none;
+}
+header .header-2 .navBar ul li{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin: 0 1rem;
+    display: flex;
+
+}
+header .header-2 .navBar ul li a{
+       color: white !important;
+       list-style: none;
+       text-decoration: none;
+       font-size: 1.8rem !important;
+}
+
 header .header-2 .navbar ul{
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 header .header-2 .navbar ul li{
     font-size: 1.8rem;
-    margin:0 1rem;
+    margin: 0 1rem;
 }
 
 header .header-2 .navbar ul li a{
     text-decoration: none;
-    color:#fff;  
+    color:green;  
+}
+
+header .header-2 .navBar ul li a:hover{
+    color: rgb(44, 44, 44) !important;  
+    font-weight: 600;
+    transition: 0.3s;
+    font-size: 1.8rem !important;
 }
 
 header .header-2 .navbar ul li a.active,
@@ -176,6 +217,10 @@ header .header-2.header-active{
     position: fixed;
     top:0; left: 0;
     box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+}
+
+.img-Logotipo{
+    width: 5%;
 }
 
 

@@ -9,7 +9,8 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import ChatIcon from '@mui/icons-material/Comment';
 import SearchIcon from '@mui/icons-material/Search';
 import JAD from '../../img/JAD.jpeg';
-
+import Logo from '../../logo2.png';
+import Logotipo from "../../logo.png"
 
 const pages = ['Casa', 'Loja', 'contacto', 'Entrar', 'Anunciar Produto'];
 
@@ -40,13 +41,13 @@ const ResponsiveAppBar = () => {
 
       <div class="header-1">
 
-        <a href="#" class="logo"> <i class="fas fa-shopping-bag"></i>  Pambala </a>
+        <a href="/" class="logo"> <img src={Logotipo} className="Logo-Logotipo" alt='' /> </a>
 
         <div class="form-container">
 
           <div className='container-form-container'>
             <form action="">
-              <input type="search" placeholder="Pesquisar produtos..." id="search" />
+              <input type="search" placeholder="Pesquisar produtos" id="search" />
               <label for="search"> <SearchIcon className='Icon-Search' /></label>
 
             </form>
@@ -56,39 +57,29 @@ const ResponsiveAppBar = () => {
 
       </div>
 
-      <div class="header-2">
+      <div className="header-2">
 
-        <div id="menu" class="fas fa-bars"></div>
+       
+          <nav className="navBar">
+            <ul>
+              <li> <Link to="/">Início</Link> </li>
+              <li><Link to="/Loja">Produtos</Link></li>
+              <li><Link to="/Anunciar%20Produto"> Anunciar</Link></li>
+              <li><Link to="/Perfil/Usuario"> Conta</Link></li>
 
-        <nav class="navbar">
-          <ul>
-            <li> <Link to="/">Início</Link> </li>
-            <li><Link to="/Loja">Produtos</Link></li>
-            <li><Link to="/Anunciar%20Produto"> Anunciar</Link></li>
-            <li><Link to="/Perfil/Usuario"> Conta</Link></li>
-            <li><Link to="/Contacto">Contacto</Link></li>
+              <li>  {localStorage.getItem('&app-token') ? <Link to="/">Sair</Link> : <Link to="/Entrar">Entrar</Link>}  </li>
 
-            <li>  {localStorage.getItem('&app-token') ? <Link to="/">Sair</Link> : <Link to="/Entrar">Entrar</Link>}  </li>
-
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+       
 
         <div class="icons">
-<<<<<<< HEAD
           <FavoriteIcon className='icons-icons' />
-          <NotificationsIcon className='icons-icons'  />
-          <ChatIcon className='icons-icons'  />
-          <Tooltip title="Open settings">
-            <IconButton  sx={{ p: 0 }}>
-              <Avatar alt="Remy Sharp" src={JAD} sx={{ width: 50, height: 50, border: 2 }} />
-=======
-            <FavoriteIcon sx={{ width: 22, height: 22,ml:0.5,borderRadius: '50%',lineHeight:20 }}/>
-            <NotificationsIcon sx={{ width: 22, height: 22,ml:0.5,borderRadius: '50%' }}/>
-            <ChatIcon sx={{ width: 22, height: 22,ml:0.5,borderRadius: '50%' }}/>
-          <Tooltip title="Perfil">
+          <NotificationsIcon className='icons-icons' />
+          <ChatIcon className='icons-icons' />
+          <Tooltip title="Foto de Perfil">
             <IconButton sx={{ p: 0 }}>
-              <Link to="/Perfil"><Avatar alt="Remy Sharp"  src={JAD}  sx={{ width: 23, height: 23,ml:0.5 }}/></Link>
->>>>>>> 1531a037e1884ae749b9a1a8142616285540abde
+              <Avatar alt="Remy Sharp"  className='Container-Avatar icons-icons' src={JAD} sx={{ width: 50, height: 50, border: 2 }} />
             </IconButton>
           </Tooltip>
         </div>

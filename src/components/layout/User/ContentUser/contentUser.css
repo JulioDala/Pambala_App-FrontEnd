@@ -1,0 +1,162 @@
+:root{
+    --borda: rgba(0, 0, 0, 0.6);
+}
+
+.Container-Content{
+    display: block;
+    align-items: center;
+}
+
+.Container-Content .Details{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container-Content .Details .Title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Container-Content .Details .Details-Title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 2%;
+}
+
+.Container-Content .Details .Details-Title h4{
+    text-transform: initial;
+}
+
+.Container-Content .Details .Title h1{
+    font-weight: bold;
+}
+ 
+.Container-Content .Produt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2%;
+}
+
+.Container-Content .Produt .Produts{
+    display: flex;
+}
+
+.Container-Content .Produt .Produts .Produt-Box{
+    margin: 5px;
+    width: 50%;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+
+}
+
+.Container-Content .Produt .Produts .Produt-Box .User-Box-Photo-Produt{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   border-bottom: 2px solid whitesmoke;
+   padding-bottom: 20px;
+}
+
+.Container-Content .Produt .Produts .Produt-Box .User-Box-Photo-Produt .Photo-Produt{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.Container-Content .Produt .Hand{
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container-Content .Produt .btn-step{
+    color: rgba(0, 0, 0, 0.6) !important;
+    position: relative;
+    font-size: large;
+}
+
+.Container-Content .Produt .btn-Hand{
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+    padding: 15px;
+    background: whitesmoke;
+}
+
+.Container-Content .Produt .Hand-Prev .btn-Next{
+    transform: rotate(180deg);
+}
+
+.Container-Content .Produt .Produt-Box{
+    display: block;
+    align-items: center;
+    border: 2px solid whitesmoke;
+}
+
+.Container-Content .Produt .Produt-Box .User-Box-Details-Produt{
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);    
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.Container-Content .Produt .Produts .User-Box-Details-Produt .Name-Register{
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.Name-Register h4{
+    font-weight: bold;
+}
+
+.Container-Content .Produt .Produts .User-Box-Details-Produt .Date-Register{
+ 
+
+    font-weight: 600;
+}
+
+.Container-Content .Produt .Produts .User-Box-Details-Produt .Rate-Register{
+
+
+    font-weight: 600;
+}
+
+.Container-Content .Produt .Produts .User-Box-Details-Produt .Stars-Register{
+   
+    font-weight: 600;
+}
+
+.Description-Register{    
+    margin-top: 10px;
+}
+
+.Description-Register span{    
+    margin-top: 10px;
+    text-transform: initial;
+}
+
+.Icon-Item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.span-item-icon{
+    padding: 10px;
+    background: var(--borda);
+    border-radius: 50%;
+    border: 2px solid white;
+
+    color: white !important;
+}
+
+.span-item-icon{
+}

@@ -23,3 +23,7 @@
     padding:2rem 0;
     width: 50rem;
 }
+
+.btn{
+    background: rgb(53, 118, 202) !important;
+}

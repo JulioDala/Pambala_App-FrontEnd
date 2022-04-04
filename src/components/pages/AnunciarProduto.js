@@ -114,11 +114,8 @@ function Loja() {
                     <Grid container spacing={2} sx={{ flexGrow: 1, mb: 2 }}>
                         {/* Lado esquerdo da Tela */}
                         <Grid item sx={{ m: 'auto' }} xs={12} md={12}>
-                            <Typography gutterBottom variant="h4" component="div" position="rigth" sx={{ textAlign: 'center' }}>
+                            <Typography gutterBottom variant="h4" component="div" position="rigth" sx={{ textAlign: 'center', fontWeigth: 600, color: 'rgb(53, 118, 202)' }}>
                                 Anunciar Produto
-                            </Typography>
-                            <Typography sx={{ textAlign: '' }}>
-                                Dados de Produto
                             </Typography>
                             <form action="" encType="multipart/form-data">
                             <TextField
@@ -129,7 +126,6 @@ function Loja() {
                                 label="titulo "
                                 name="nome"
                                 autoComplete="titulo"
-                                autoFocus
                                 value={nome}
                                 onChange={(e) => setNome(e.target.value)}
                             />
@@ -183,7 +179,6 @@ function Loja() {
                                 aria-label="minimum height"
                                 minRows={6}
                                 placeholder="Descrição do Produto"
-                                autoFocus
                                 style={{ width: '100%' }}
                                 name='descricao'
                                 value={descricao}
@@ -201,7 +196,6 @@ function Loja() {
                                     name="preco"
                                     autoComplete="preco"
                                     type="tel"
-                                    autoFocus
                                     value={preco}
                                     onChange={(e) => setPreco(e.target.value)}
                                 />
@@ -209,8 +203,7 @@ function Loja() {
                             <Typography sx={{ textAlign: '' }}>
                                 Imagens
                             </Typography>
-                            <TextField
-                                autoFocus
+                            <TextField                            
                                 margin="dense"
                                 id="name"
                                 name="image"
@@ -278,7 +271,6 @@ function Loja() {
                                 label="Telefone "
                                 name="telefone"
                                 autoComplete="telefone"
-                                autoFocus
                             />
                             <TextField
                                 margin="normal"
@@ -288,11 +280,10 @@ function Loja() {
                                 label="Email "
                                 name="email"
                                 autoComplete="email"
-                                autoFocus
                             />
                             <Stack direction="row-reverse" spacing={2}>
-                                <Button sx={{ mt: 2,bgcolor: ' #2980b9' }} variant="contained" onClick={uploadFile}>
-                                    Publicar Anúncio
+                                <Button sx={{ mt: 2,bgcolor: ' #2980b9', fontWeight: 600, fontSize: 12 }} fullWidth variant="contained" onClick={uploadFile}>
+                                    Anunciar
                                 </Button>
                             </Stack>
                             </form>
@@ -301,8 +292,8 @@ function Loja() {
                 </Paper>
             </Box >
             {/* Rodapé */}
-            < FooterAdmin sx={{ p: 2 }
-            } />
+            {/* < FooterAdmin sx={{ p: 2 }
+            } /> */}
         </ThemeProvider >
 
     );

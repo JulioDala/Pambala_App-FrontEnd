@@ -34,6 +34,9 @@
     opacity: .8;
 }
 
+.footer{
+    background: rgb(226, 226, 226);
+}
 .footer .box-container{
     display: flex;
     justify-content: center;
@@ -64,6 +67,7 @@
 
 .footer .box-container .box h3{
     font-size: 2rem;
+    font-weight: 600;
     color:var(--blue);
 }
 
@@ -80,20 +84,39 @@
 }
 
 .footer .box-container .box:nth-child(2) a:hover{
-    text-decoration: underline;
+    
+    background: rgb(53, 118, 202);
+    color: white;
 }
 
 .footer .credit{
     text-align: center;
     width: 85%;
     margin:0 auto;
-    border-top: .1rem solid rgba(0,0,0,.3);
+    border-top: 1rem solid rgba(0,0,0,.3);
     color:#666;
     font-size: 1.5rem;
+    text-transform: initial;
 }
 
 .footer .credit span{
     color:var(--blue);
+}
+
+.Logo-Title{
+    text-transform: uppercase;
+    font-size: 60% !important;
+}
+
+.Descrition-logo{
+    text-transform: initial;
+}
+
+.Logotipo{
+    width: 10%;
+    background: rgb(53, 118, 202);
+    border-radius: 20%;
+    display: block;
 }
 
 /* media queries  */

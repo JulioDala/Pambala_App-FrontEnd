@@ -25,20 +25,14 @@ export default function Promocoes() {
     const [openModal3, setOpenModal3] = useState(false);
     
     return (
-        <div classname="container-usuario">
-            
+        <div classname="container-usuario">            
             { openModal2 && <ModalUsuarioContactos closeModal={setOpenModal2} />}
             { openModal3 && <ModalUsuarioQualificacoes closeModal={setOpenModal3} />}
-            { openModal && <ModalUsuarioInfo closeModal={setOpenModal} />}    
-             
-            <div>
-                <Navbar />
-            </div>
+            { openModal && <ModalUsuarioInfo closeModal={setOpenModal} />}  
+          
 
             <div className='container-usr'>
-                <div>
-                    <SideBarUser />
-                </div>
+                
                 <div className='container-usr-box'>
                     <div className='usuario'>
                         <div className='usuario-usuario'>

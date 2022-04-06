@@ -24,7 +24,7 @@ import FooterAdmin from '../FooterAdmin';
 import api from '../services/api';
 import Navbar from '../layout/Navbar';
 import './DescricaoProduto.css'
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 
 const mdTheme = createTheme();
@@ -298,8 +298,8 @@ const DescricaoProduto = () => {
                                         }}
                                     />
                                 </Typography>
-                                <Button sx={{ mt: '3', bgcolor: '#2980b9' }} variant="contained" >
-                                    Ver Perfil
+                                <Button sx={{ mt: '3', bgcolor: '#2980b9' }} variant="contained" onClick='' >
+                                    <Link to='/Usuario/index'> Ver Perfil </Link>
                                 </Button>
                             </CardContent>
                         </Card>

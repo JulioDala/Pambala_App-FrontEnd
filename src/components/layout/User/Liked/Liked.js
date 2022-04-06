@@ -1,13 +1,10 @@
 import React from 'react';
-import './countUser.css';
-import ContenUser2 from "../ContentUser2/ContentUser2"
-import ContenUser from "../ContentUser/ContentUser"
 
 import HeaderNavBar from "../HeaderNavBar/HeaderNavBar";
 import MenuUser from '../MenuUser/MenuUser';
-import Usuario from '../../../pages/SidebarUser/Usuario/Usuario';
+import Favorito from '../../../pages/SidebarUser/Favoritos/Favorito';
 
-export default function CountUser() {
+export default function Liked() {
     return (
         <>
             <div className='Container-content'>
@@ -19,7 +16,7 @@ export default function CountUser() {
                         <MenuUser />
                     </div>
                     <div className='cc-B'>
-                        <Usuario/>                       
+                        <Favorito/>                       
                     </div>
                 </div>
             </div>

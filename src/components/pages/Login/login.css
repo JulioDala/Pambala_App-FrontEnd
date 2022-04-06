@@ -1,0 +1,106 @@
+:root{
+    --fundo: rgb(235, 235, 235);
+    --bordas: rgb(53, 118, 202);
+    --fonte:  rgb(53, 118, 202);
+    --cinza: rgb(195, 195, 195);
+}
+.Login{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.664);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 3s;
+}
+
+.Login:focus body{
+    overflow: none;
+}
+
+.ccLogin{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgb(189, 189, 189);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.modalBody form input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 0;
+    border: none;
+    border-bottom: 1px solid var(--bordas);
+}
+
+.ccLogin .modalTitle h1{
+    font-weight: bold;
+    color: cornflowerblue;
+}
+.ccLogin .modalTitle{
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ssP{
+    font-size: 50px !important;
+    color: white !important;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+    background: rgb(53, 118, 202);
+}
+
+.titleCloseBtn{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.titleCloseBtn button{
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: var(--bordas);
+}
+
+.ccLogin .modalBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ccLogin .modalFooter{
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer .modalFooter button{
+    width: 50%;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background: var(--bordas);
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modalContainer .modalFooter button:hover{
+    
+    background: cornflowerblue;
+   
+}

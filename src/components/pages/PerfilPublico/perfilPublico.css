@@ -1,0 +1,65 @@
+.PerfilPublico {
+    display: flex;
+    padding: 10px;
+}
+
+.PublicPhoto img {
+    border: 2px solid rgb(26, 95, 192);
+    width: 160px;
+    border-radius: 50%;
+}
+
+.PublicData {
+    margin: 0 0 0 2%;
+    padding: 10px;
+}
+
+.PublicName {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.PublicName span {
+
+    font-size: large;
+    font-weight: 600;
+    color: rgb(26, 95, 192);
+}
+
+
+.PublicContact span {
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.PublicLocation span {
+    margin: 10px;
+    display: block;
+}
+
+.PublicIcon {
+    margin-right: 10px;
+}
+
+.PublicChat{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.PublicChat button{
+    border: none;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    background: rgb(26, 95, 192);
+}
+
+.IconPublicChat{
+    font-size: 25px !important;
+}
+
+.PublicLC{
+    display: flex;
+    justify-content: space-between;
+}

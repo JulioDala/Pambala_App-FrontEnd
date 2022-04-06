@@ -12,6 +12,9 @@ import JAD from '../../img/JAD.jpeg';
 import Logo from '../../logo2.png';
 import Logotipo from "../../logo.png"
 
+import Login from '../pages/Login/Login';
+import {useState} from 'react';
+
 const pages = ['Casa', 'Loja', 'contacto', 'Entrar', 'Anunciar Produto'];
 
 const settings = ['Perfil', 'Sair'];
@@ -34,61 +37,35 @@ const ResponsiveAppBar = () => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-
+  const [AbrirLogin, setFecharLogin] = useState(false);
   return (
 
     <header>
-
+      { AbrirLogin && <Login closeModal={setFecharLogin} />}
       <div class="header-1">
-
         <a href="/" class="logo"> <img src={Logotipo} className="Logo-Logotipo" alt='' /> </a>
-
         <div class="form-container">
-
           <div className='container-form-container'>
             <form action="">
               <input type="search" placeholder="Pesquisar produtos" id="search" />
               <label for="search"> <SearchIcon className='Icon-Search' /></label>
-
             </form>
           </div>
-
         </div>
-
       </div>
-
-      <div className="header-2">
-
-       
-          <nav className="navBar">
+      
+      <div className="header-2">       
+          <nav className="navBar">          
             <ul>
               <li> <Link to="/">Início</Link> </li>
               <li><Link to="/Loja">Produtos</Link></li>
-              <li><Link to="/Anunciar%20Produto"> Anunciar</Link></li>
-              <li><Link to="/Perfil/Usuario"> Conta</Link></li>
-
-              <li>  {localStorage.getItem('&app-token') ? <Link to="/">Sair</Link> : <Link to="/Entrar">Entrar</Link>}  </li>
-
+              <li><Link to="#">Cadastrar</Link></li>
+              <li>  {localStorage.getItem('&app-token') ? <Link to="/">Sair</Link> : <Link to="#" onClick={() => {setFecharLogin(true);}}>Entrar</Link>}  </li>
             </ul>
           </nav>
-       
-
-        <div class="icons">
-          <FavoriteIcon className='icons-icons' />
-          <NotificationsIcon className='icons-icons' />
-          <ChatIcon className='icons-icons' />
-          <Tooltip title="Foto de Perfil">
-            <IconButton sx={{ p: 0 }}>
-              <Avatar alt="Remy Sharp"  className='Container-Avatar icons-icons' src={JAD} sx={{ width: 50, height: 50, border: 2 }} />
-            </IconButton>
-          </Tooltip>
-        </div>
-
       </div>
-
+      
     </header>
-
   )
-
 };
 export default ResponsiveAppBar;

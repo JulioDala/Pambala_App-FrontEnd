@@ -31,9 +31,18 @@ import PrivateRoute from './services/WAuth';
 import Conta from './pages/Conta';
 import Promocoes from './pages/Promocoes';
 
+import PerfilPublico from './pages/PerfilPublico/PerfilPublico';
+import Shop from "./layout/User/Shop/Shop";
+
 /* Importações da Conta Do Usuario */
 import IndexUser from './layout/User/IndexUser/IndexUser';
 import CountUser from './layout/User/CountUser/CountUser';
+import Liked from './layout/User/Liked/Liked';
+import Notifications from './layout/User/Notifications/Notifications';
+import Shield from './layout/User/Shield/Shield';
+import Publish from './layout/User/Publish/Publish';
+
+import PublishProduct from './layout/User/PublishProduct/PublishProduct';
 
 function Rotas() {
   return (
@@ -60,9 +69,19 @@ function Rotas() {
         <Route element={<AnunciarProduto /> } path="/Anunciar%20Produto"  />
         <Route element={<DescricaoProduto />} path="/Produto/:ident" exact />
 
+        {/* ROTAS PUBLICAS*/}
+        <Route element={<PerfilPublico />} path="/Usuario/index" exact />
+        <Route element={<Shop />} path="/index/Usuario/Loja" exact />
+
         {/* Rotas da Conta Do Usuario */}
         <Route element={<IndexUser />} path="/index/usuario" exact />
         <Route element={<CountUser />} path="/index/usuario/Conta" exact />
+        <Route element={<Liked />} path="/index/usuario/Gostos" exact />
+        <Route element={<Notifications />} path="/index/usuario/Notificacao" exact />
+        <Route element={<Shield />} path="/index/usuario/Promovidos" exact />
+        <Route element={<Publish />} path="/index/usuario/Anunciados" exact />
+
+        <Route element={<PublishProduct/>} path="/index/usuario/Anunciar" exact />
 
         {/* Rotas do admin */}
         <Route element={<Dashboard />} path="/admin" exact />

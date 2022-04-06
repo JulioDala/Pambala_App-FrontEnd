@@ -16,14 +16,8 @@ import Promo from '@mui/icons-material/Bookmark';
 export default function Promovidos() {
     return (
         <div classname="container-favorito">
-            <div>
-                <Navbar />
-            </div>
-
-            <div className='container-fvt'>
-                <div>
-                    <SideBarUser />
-                </div>
+                       <div className='container-fvt'>
+             
                 <div className='container-fvt-box'>
                     <div className='favorito'>
                         <div className='favorito-favorito'>

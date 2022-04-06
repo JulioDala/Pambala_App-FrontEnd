@@ -100,7 +100,7 @@ function Loja() {
 
   return (
     <ThemeProvider theme={mdTheme}>
-      <Navbar />
+      
       <Box sx={{
         backgroundImage: 'Linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(negocios)',
         height: '300px',
@@ -241,7 +241,7 @@ function Loja() {
 
       </Box>
       {/* Rodapé */}
-      <FooterAdmin sx={{ p: 2 }} />
+      
     </ThemeProvider >
 
   );

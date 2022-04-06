@@ -40,10 +40,10 @@ export default function HeaderUser() {
                         <div className="Content-navBar">
                             <div className='nav-header'>
                                 <ul>
-                                    <Link to="" className='LinkMenu'><li>Inicio</li></Link>
-                                    <Link to="" className='LinkMenu'><li>Produtos</li></Link>
-                                    <Link to="" className='LinkMenu' onClick={() => {FecharAnuncio(true);}}> <li>Anunciar</li> </Link>
-                                    <Link to="/index/usuario/Conta" className='LinkMenu'><li>Conta</li></Link>                                    
+                                    <Link to="/index/usuario" className='LinkMenu'><li>Inicio</li></Link>
+                                    <Link to="/index/Usuario/Loja" className='LinkMenu'><li>Produtos</li></Link>
+                                    <Link to="" className='LinkMenu' onClick={() => {FecharAnuncio(true);}}> <li>Anunciar</li> </Link>                                                                      
+                                    <Link to="/index/Usuario/Conta" className='LinkMenu'><li>Perfil</li></Link>
                                 </ul>
                             </div>
                         </div>
@@ -54,14 +54,16 @@ export default function HeaderUser() {
                             </form>
                         </div>
                         <div className="Container-item-user">
-                            <FavoriteIcon className='icons-icons' />
-                            <NotificationsIcon className='icons-icons' />
-                            <ChatIcon className='icons-icons' />
+                           <Link to="/index/usuario/Gostos"> <FavoriteIcon className='icons-icons' /></Link>
+                           <Link to="/index/usuario/Notificacao"> <NotificationsIcon className='icons-icons' /></Link>
+                           <Link to="/index/usuario/Chat"> <ChatIcon className='icons-icons' /></Link>
+                            <Link  to="/index/usuario/Conta">
                             <Tooltip title="Foto de Perfil">
                                 <IconButton sx={{ p: 0 }}>
                                     <Avatar alt="Remy Sharp" className='Container-Avatar icons-icons' src={JAD} sx={{ width: 35, height: 35, border: 1.5 }} />
                                 </IconButton>
                             </Tooltip>
+                            </Link>
                         </div>
 
                     </div>

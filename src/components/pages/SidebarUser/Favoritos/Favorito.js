@@ -14,15 +14,8 @@ import Favorite from '@mui/icons-material/Favorite';
 
 export default function Promocoes() {
     return (
-        <div classname="container-favorito">
-            <div>
-                <Navbar />
-            </div>
-
-            <div className='container-fvt'>
-                <div>
-                    <SideBarUser />
-                </div>
+        <div classname="container-favorito">           
+            <div className='container-fvt'>                
                 <div className='container-fvt-box'>
                     <div className='favorito'>
                         <div className='favorito-favorito'>

@@ -31,11 +31,11 @@ export default function MenuUser() {
                         </header>
                         <nav>
                             <ul>
-                                <Link to="" className="Link"> <Person />  <li>Perfil</li> </Link>
-                                <Link to="" className="Link">  <Favorite /> <li>Gostados</li> </Link>
-                                <Link to="" className="Link">  <Shield />  <li>Promovidos</li> </Link>
-                                <Link to="" className="Link">  <Notifications /> <li>Notificações</li> </Link>
-                                <Link to="" className="Link">  <Propagand /> <li>Anunciados</li> </Link>
+                                <Link to="/index/usuario/Conta" className="Link"> <Person />  <li>Perfil</li> </Link>
+                                <Link to="/index/usuario/Gostos" className="Link">  <Favorite /> <li>Gostados</li> </Link>
+                                <Link to="/index/usuario/Promovidos" className="Link">  <Shield />  <li>Promovidos</li> </Link>
+                                <Link to="/index/usuario/Notificacao" className="Link">  <Notifications /> <li>Notificações</li> </Link>
+                                <Link to="/index/usuario/Anunciados" className="Link">  <Propagand /> <li>Anunciados</li> </Link>
                                 <Link to="" className="Link">  <Door /> <li>Sair</li> </Link>
                             </ul>
                         </nav>

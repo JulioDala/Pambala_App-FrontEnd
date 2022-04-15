@@ -1,0 +1,109 @@
+
+
+.apsHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.apsIcon{
+    font-size: 2.5rem !important;
+}
+
+.apsUpl{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.APS form input{
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    background: transparent;
+    border: solid whitesmoke 2px;
+}
+
+.APS form select{
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    background: transparent;
+    border: solid whitesmoke 2px;
+}
+
+.APS form textarea{
+    width: 100%;
+    padding: 10px;
+}
+
+:root{
+    --fundo: rgb(235, 235, 235);
+    --bordas: rgb(53, 118, 202);
+    --fonte:  rgb(53, 118, 202);
+    --cinza: rgb(195, 195, 195);
+}
+.APSmodalBackground{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.664);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 3s;
+}
+
+.APSmodalContainer{
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.APSmodalContainer .APSmodalFooter{
+    flex: 20%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.APSmodalContainer .APSmodalFooter button{
+    width: 30%;
+    height: 35px;
+    margin: 10px 0px;
+    margin-left: 5px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    
+    cursor: pointer;
+}
+
+.APSmodalContainer .modalFooter button:hover{
+    
+    background: cornflowerblue;
+   
+}
+
+@media (max-width: 600px) {
+    .apsUpl{
+        display: block;
+        justify-content: space-between;
+        justify-content: center;
+    }
+    .APSmodalContainer{
+        width: 350px;
+        height: 70%;
+        background-color: white;
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+}

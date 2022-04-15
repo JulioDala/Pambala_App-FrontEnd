@@ -100,24 +100,7 @@ function Loja() {
 
   return (
     <ThemeProvider theme={mdTheme}>
-      
-      <Box sx={{
-        backgroundImage: 'Linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(negocios)',
-        height: '300px',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        position: 'relative',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        color: '#fff',
-        fontSize: '4rem'
-      }}>
-        <Box >
-          Nome da Categoria
-        </Box>
-      </Box>
+      <Navbar />     
       <Box sx={{ flexGrow: 1, m: 2, mb: 4 }}>
         <Grid container spacing={2} sx={{ flexGrow: 1, mb: 4 }}>
           {/* Lado esquerdo da Tela */}

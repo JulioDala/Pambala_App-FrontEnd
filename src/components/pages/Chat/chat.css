@@ -1,0 +1,306 @@
+.Chat{
+    font-size: large;
+    height: 100vh;
+}
+
+.Chat .cChat .ChatMenu{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(53, 118, 202);
+    height: 5vh;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.Chat .cChat .ChatUsuarios{
+    
+    background: rgb(104, 109, 116);
+    border-right: 2px solid whitesmoke;
+    width: 30%;
+    height: 100vh;
+}
+
+.chtChat{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+.chtChat div{
+    margin: 5px;
+}
+
+.chtChat div .i{
+    color: white;
+    font-size: 2rem;
+}
+
+.chtChat div span{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+.cMenu{
+    display: none;
+    align-items: center;
+    margin: 5px;
+}
+
+.cMenu .i{
+    color: rgb(53, 118, 202);
+    font-size: 2rem;
+}
+
+
+.btnChat{
+    display: flex;
+    width: 10%;
+}
+
+.btnChat button{
+    width: 50%;
+    text-align: center;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    background: transparent;
+}
+
+.Chat .cChat .ChatMensagens{
+    width: 100%;
+    text-align: center;
+    align-items: baseline;
+}
+
+.bChat{
+    display: flex;
+}
+
+.ChatMensagens .cmConteudo{
+    height: 75vh;
+}
+
+.cmConteudo .Chat-Enviado{
+    display: flex;
+    padding: 10px;
+}
+
+.cmConteudo .Chat-Enviado span{
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: initial;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(53, 118, 202);
+}
+
+.cmConteudo .Chat-Recebido{
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+}
+
+.cmConteudo .Chat-Recebido span{
+    display: flex;
+    color: white;
+    padding: 10px;
+    
+    font-size: 1.5rem;
+    text-transform: initial;
+    border-radius: 10px;
+    background: rgb(104, 109, 116);
+}
+
+.ChatMensagens .mmConteudo{
+    height: 8vh;
+    justify-content: space-between;
+    padding: 5px;
+    display: flex;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.mmUser{
+    display: flex;
+    justify-content: center;
+}
+
+.mmUserImg{
+    display: flex;
+    justify-content: center;
+}
+
+.mmUser img{
+    display: flex;
+    width: 100%;
+    border: 1px solid rgb(53, 118, 202);
+    border-radius: 50%;
+}
+
+.mmUserTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.mmUserTitle h3{
+    display: block;
+    color: rgb(53, 118, 202);
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+}
+
+.ChatMensagens .lmConteudo{
+    border-top: whitesmoke 2px solid;
+    background: white;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.ChatMensagens .lmConteudo form{
+    display: flex;
+    padding: 5px;
+    width: 100%;
+}
+
+.ChatMensagens .lmConteudo form textarea{
+    display: flex;
+    padding: 5px;
+    height: 40px;
+    background: rgba(67, 65, 65, 0.087);
+    border-radius: 10px;
+    width: 100%;
+    border: 2px solid rgba(128, 128, 128, 0.608);
+
+    text-transform: initial;
+    overflow: hidden;
+}
+
+.chtUsuario{
+    border-bottom: 2px solid whitesmoke;
+    background: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chtUser{
+    display: flex;
+}
+
+.chtDateUser div h4{
+    color: rgb(53, 118, 202);
+    font-size: bold;
+}
+
+.chtDateUser div h6{
+    text-transform: initial;
+}
+
+.chtUser .chtcPhoto{
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+
+.chtUser div img{
+    border: 1px solid rgb(53, 118, 202);
+    border-radius: 50%;
+    width: 100%;
+    display: flex;
+}
+
+.chtDateUser{
+    padding: 10px;
+}
+
+.cbChat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.chtUsuario .chtSpan{
+    display: flex;
+    align-items: center;  
+}
+
+.chtUsuario .chtSpan span{
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+    transition: 0.3s;
+}
+
+.mmOption .i{
+    font-size: 2rem;
+    color: rgb(53, 118, 202);
+    margin: 0 5px;
+}
+
+.cbChat .i{
+    font-size: 2.5rem;
+    color: rgb(53, 118, 202);
+    margin: 0 5px;
+}
+
+.ChatMensagens .lmConteudo .iChat{
+    display: none;
+}
+
+.ChatMensagens .lmConteudo form button{
+    border: none;
+    display: flex;
+    align-items: center;
+    color: rgb(53, 118, 202);
+    background: transparent;
+    margin: 0 10px;
+}
+
+@media (max-width: 800px) {
+    .ChatMensagens .lmConteudo .iChat{
+        display: flex;
+        font-size: 3rem;
+    }
+
+    .ChatMensagens .lmConteudo form span{
+        display: none;
+    }
+
+    .ChatMensagens .mmConteudo{
+        height: 5vh;
+    }
+
+    .Chat .cChat .ChatUsuarios{
+        display: none;
+        background: yellow;
+        width: 30%;
+        height: 100vh;
+    }
+
+    .Chat .cChat .ChatMensagens{
+        width: 100%;
+        text-align: center;
+        align-items: baseline;
+    }
+    .ChatMensagens .cmConteudo{
+        height: 80vh;
+    }
+
+    .cMenu{
+        display: flex;
+        align-items: center;
+        margin: 5px;
+    }
+}

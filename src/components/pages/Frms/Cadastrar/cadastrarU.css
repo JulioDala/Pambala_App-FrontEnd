@@ -1,0 +1,133 @@
+.CdsHeader{
+}
+
+.apsIcon{
+    font-size: 2.5rem !important;
+}
+
+.apsUpl{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.CDS form {
+}
+
+.CDS form input{
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    background: transparent;
+    border: solid whitesmoke 2px;
+}
+
+.CDS form select{
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    background: transparent;
+    border: solid whitesmoke 2px;
+}
+
+.CDS form textarea{
+    width: 100%;
+    padding: 10px;
+}
+
+:root{
+    --fundo: rgb(235, 235, 235);
+    --bordas: rgb(53, 118, 202);
+    --fonte:  rgb(53, 118, 202);
+    --cinza: rgb(195, 195, 195);
+}
+.CdsmodalBackground{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.664);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 3s;
+}
+
+.CdsmodalContainer{
+    width: 350px;
+    height: 600px;
+    background-color: white;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.CdsmodalContainer .CdsmodalFooter{
+    flex: 20%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.CdsmodalContainer .CdsmodalFooter button{
+    width: 30%;
+    height: 30px;
+    margin: 10px 0px;
+    margin-left: 5px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    
+    cursor: pointer;
+}
+
+.cdsImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.cdsImg div img{
+    border-radius: 50%;
+    width: 10rem;
+    border: 1.5px solid rgb(53, 118, 202);
+}
+
+.cdsImg div .cdsCam{
+    background: rgb(53, 118, 202);
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 3rem !important;
+    position: absolute;
+    left: 51%;
+    top: 19%;
+}
+
+.cdsMB{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cdsMB input{
+    margin: 0 5px;
+}
+
+@media (max-width: 600px) {
+    .apsUpl{
+        display: block;
+        justify-content: space-between;
+        justify-content: center;
+    }
+    .APSmodalContainer{
+        width: 350px;
+        height: 70%;
+        background-color: white;
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+}

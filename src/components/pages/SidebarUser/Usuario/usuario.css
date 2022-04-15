@@ -105,3 +105,115 @@ table tr td{
     text-align: center;
     padding: 10px;
 }
+
+@media (max-width: 600px) {
+
+    
+.container-usr{
+    display: flex;
+}
+.usuario{
+    background-color: white;
+    border: rgb(224, 224, 224) 2px solid;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+}
+.container-usr-box{
+    padding: 5px;
+    width: 100%;
+}
+
+.container-usuario-foto{
+    padding: 5px;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-usuario-foto .usuario-usuario-foto{
+    border-radius: 50%;
+    border: 4px solid var(--bordas);
+    background: var(--bordas);
+    width: 100%;
+}
+
+.usuario-usuario{
+    padding: 5px;
+    display: block;
+    justify-content: left;
+}
+
+.usuario-usuario-nome{
+    color: var(--fonte);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.btn-edit-user{
+    height: 20px;
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    
+    background: var(--bordas);
+}
+.usuario-usuario-space{
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 2rem;
+}
+
+.usuario-icon-item{
+    padding: 5px;
+    display: block;
+    align-items: center;
+}
+
+.usuario-icon{
+    margin-right: 5px;
+    font-size: 2rem !important;
+}
+
+.container-usuario-editar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    margin: 10px;
+}
+
+.usuario-usuario-notificacao{
+    font-size: 150%;
+}
+
+.container-usuario-icon{
+    padding: 5px;
+    display: flex;
+    justify-content: right;
+}
+
+table{
+    align-items: center;
+}
+table th{
+    align-items: center;
+    text-align: center;
+}
+table tr{
+    width: 100%;
+}
+
+table tr td{
+    text-align: center;
+    padding: 10px;
+}
+
+}

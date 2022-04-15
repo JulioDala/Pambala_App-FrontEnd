@@ -1,3 +1,127 @@
+:root{
+    --fundo: rgb(235, 235, 235);
+    --bordas: rgb(53, 118, 202);
+    --fonte:  rgb(53, 118, 202);
+    --cinza: rgb(195, 195, 195);
+}
+.ANCmodalBackground{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.664);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 3s;
+}
+
+.ANCmodalContainer{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    box-shadow: rgb(189, 189, 189);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.mANC{
+    border-top: none;
+    display: block;
+    height: 100%;
+}
+
+.mAnc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mAnc .mAncImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+}
+
+.mANC .mAncImg img{        
+    padding: 2px;
+    width: 100%;
+    background: rgba(53, 118, 202, 0.72);
+}
+
+.mANC .mAncTitulo{
+    padding: 5px;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.mANC .mAncTitulo h4{
+    font-weight: 600;
+    
+    font-size: 2rem;
+}
+
+.mANC .mAncTitulo .mStr{
+    font-weight: 600;        
+    font-size: 2rem;
+}
+
+.mANC .mAncTitulo h3{
+    font-weight: 600;
+    color: rgb(53, 118, 202);
+    
+    font-size: 3rem;
+}
+.mbtn-Menu-ANC{
+    display: block;
+}
+.mbtn-Menu-ANC button{
+    padding: 5px;
+    font-size: 2rem;
+    border: none;
+    background: rgba(53, 118, 202, 0.72);
+    border-radius: 5px;
+    width: 20%;
+    margin: 5px 2px;
+}
+
+
+
+.modalContainer .modalTitle h1{
+    font-weight: bold;
+    color: cornflowerblue;
+}
+.modalContainer .modalTitle{
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.titleCloseBtn{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.titleCloseBtn button{
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: var(--bordas);
+}
+
+.modalContainer .modalBody{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
 .modalbody-foto{
     display: flex;
     justify-content: center;

@@ -103,12 +103,13 @@
 
 .ccSearch{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 10px;
 }
 
 .ccSearch form{
     display: flex;
+    justify-content: space-between;
 }
 
 .ccSearch form input{
@@ -117,16 +118,132 @@
     width: 100%;
     font-size: 18px;
 
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-right: none;
+}
+
+.ccSearch form select{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    width: 100%;
+    font-size: 18px;
 }
 
 .ccSearch form button{
     padding: 10px;
     border: none;
-
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    color: white;
+    background: rgba(53, 118, 202, 0.72);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
     cursor: pointer;
+}
+
+.ANCFull{
+    width: 100%;
+    
+    padding: 10px;
+}
+
+.ANC{
+    border-bottom: whitesmoke solid 2px;
+    border-top: whitesmoke solid 2px;
+    display: flex;
+    height: 20vh;
+    width: 100%;
+}
+.ANC .ancImg{
+    display: flex;
+    width: 10vw;
+}
+.ANC .ancImg img{    
+    padding: 2px;
+    width: 100%;
+    background: rgba(53, 118, 202, 0.72);
+}
+
+.ANC .ancTitulo{
+    padding: 5px;
+    width: 100%;
+}
+
+.ANC .ancTitulo h3{
+    font-weight: 600;
+    color: rgb(53, 118, 202);
+}
+
+.btn-Menu-ANC button{
+    padding: 5px;
+    border: none;
+    color: white;
+    background: rgba(53, 118, 202, 0.72);
+    border-radius: 5px;
+    width: 6%;
+    margin: 5px 2px;
+}
+
+@media (max-width:600px) {
+   
+    .ANC{
+        border-top: none;
+        display: block;
+        height: 100%;
+    }
+    .anc{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ANC .ancImg{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin-left: 40px;
+    }
+    .ANC .ancImg img{        
+        padding: 2px;
+        width: 100%;
+        background: rgba(53, 118, 202, 0.72);
+    }
+    
+    .ANC .ancTitulo{
+        padding: 5px;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    
+    .ANC .ancTitulo h4{
+        font-weight: 600;        
+        font-size: 2rem;
+    }
+
+    .ANC .ancTitulo .str{
+        font-weight: 600;        
+        font-size: 2rem;
+    }
+
+    .ANC .ancTitulo h3{
+        font-weight: 600;
+        color: rgb(53, 118, 202);        
+        font-size: 3rem;
+    }
+    .btn-Menu-ANC{
+        display: block;
+        justify-content: center;
+    }
+    .btn-Menu-ANC button{
+        padding: 5px;
+        border: none;
+        background: rgba(53, 118, 202, 0.72);
+        border-radius: 5px;
+        width: 50%;
+        margin: 5px 2px;
+    }
+    
 }

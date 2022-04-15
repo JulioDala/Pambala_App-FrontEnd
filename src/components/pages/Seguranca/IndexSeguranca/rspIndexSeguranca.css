@@ -1,0 +1,226 @@
+@media (max-width:600px) {
+.cSeguranca{
+    background: url('../../../../img/ImgSeguranca/Polish_20220411_095701731.png') center;
+    background-color: rgba(45, 131, 212, 0.84);
+    height: 40vh;
+    width: 100%;
+}
+
+.cSeguranca .A{
+    margin-top: 100px;
+    color: white;
+    width: 100%;
+}
+
+.ccSeguranca{
+    margin: 0% 1% 0 1%;
+}
+
+.ccSeguranca div{
+    margin: 5px 0;
+}
+
+.ccSeguranca .A{
+    padding: 0 1%;
+    border-left: rgba(45, 131, 212, 0.84) solid 5px;
+}
+.AB{
+    background: rgba(130, 177, 238, 0.541);
+    border-left: 5px solid rgba(45, 131, 212, 0.84);
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.AB button{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background: rgba(45, 131, 212, 0.84);
+    font-size: 1.5rem !important;
+
+}
+.ccSeguranca .A button{
+    background: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    border: 1px solid rgba(45, 131, 212, 0.84);
+    color: rgba(45, 131, 212, 0.84);
+    margin: 0 50%;
+}
+
+.ccSeguranca .B{
+    display: block;
+}
+
+.ccSeguranca .C{
+    display: block;
+    height: 75vh;
+}
+
+.ccSeguranca .B .WhatsApp{
+    padding: 10px;
+    border-radius: 10px;
+    background: url('../../../../img/ImgSeguranca/vendas-seguras-internet-cursos-cpt.jpg') center;
+    width: 100%;
+    height: 30vh;
+}
+
+.ccSeguranca .C .WhatsApp-AB{
+    padding: 10px;
+    border-radius: 10px;
+    background: url('../../../../img/ImgSeguranca/comprar_online_segurança.jpg') center;
+    width: 100%;
+    height: 30vh;
+}
+
+.ccSeguranca .B .WhatsApp h3{
+    font-weight: bold;
+    color: white;
+}
+
+.ccSeguranca .B .WhatsApp h4{
+    color: white;
+}
+
+.ccSeguranca .B .WhatsApp .WhatsApp-A{
+    padding: 10px;
+    width: 100%;
+} 
+
+.ccSeguranca .B .WhatsApp .WhatsApp-C{
+    padding: 10px;
+    width: 100%;
+} 
+
+.ccSeguranca .B .AI{
+    margin-top: 10px;  
+}
+
+.ccSeguranca .B .AIA{    
+    margin-top: 5px;
+    padding: 5px;
+ }
+ 
+
+ .ccSeguranca .C .cpl .Invasao-C .AIA2{
+         height: 25vh;
+    padding: 20px;
+ }
+
+ .ccSeguranca .B .AIA div button{    
+    background: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid rgba(45, 131, 212, 0.84);
+    color: rgba(45, 131, 212, 0.84);
+    margin: 5% 0 0 0;
+ }
+
+ .ccSeguranca .C .AIA2 div button{    
+    background: transparent;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid rgba(45, 131, 212, 0.84);
+    color: rgba(45, 131, 212, 0.84);
+    margin: 5% 0;
+ }
+
+.ccSeguranca .B .AI img{
+    align-items: center;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(45, 131, 212, 0.84);
+}
+
+.ccSeguranca .B .Invasao{
+    border-radius: 10px;
+    width: 100%;
+
+}
+.C .cpl{
+    background: whitesmoke;
+    border-radius: 10px;
+}
+.ccSeguranca .C .cpl .Invasao-C{    
+    width: 100%;
+    background: url('../../../../img/ImgSeguranca/Polish_20220411_095701731.png') center top;
+    border-radius: 10px;
+}
+
+.D .cD{
+    display: block;
+}
+
+.D .cD .ccD{
+    display: block;
+}
+
+.D .cD .ccD button{
+    background: transparent;
+    padding: 5px;
+    border: rgba(45, 131, 212, 0.84) 1px solid;
+    color: rgba(45, 131, 212, 0.84);
+    border-radius: 10px;
+}
+
+.segImg{
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid rgba(45, 131, 212, 0.84);
+}
+
+.cD-Space{
+    border-radius: 20px;
+}
+
+.cD-cc{
+    padding: 0 10px 10px 10px;
+}
+
+.cD-cc h4{
+    color: rgba(45, 131, 212, 0.84);
+
+}
+
+.cD .cDD{
+    margin: 0 00px;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.E{
+    width: 100%;
+    height: 40vh;
+    background: url('../../../../img/ImgSeguranca/e-commerce.png') center;
+}
+
+.E div{
+    left: 5px;
+    width: 100%;
+}
+
+.E div h2{
+    text-decoration: none;
+    text-transform: initial;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+}
+
+.E div button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(45, 131, 212, 0.84);
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    margin: 10px;
+}
+
+  
+
+}

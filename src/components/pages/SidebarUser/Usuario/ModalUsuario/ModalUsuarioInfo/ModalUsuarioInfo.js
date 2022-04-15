@@ -8,9 +8,6 @@ export default function ModalUsuarioInfo({ closeModal }) {
                 <div className="titleCloseBtn">
                     <button onClick={() => closeModal(false)} > X </button>
                 </div>
-                <div className="modalTitle">
-                    <h1>Informações Pessoais</h1>
-                </div>
                 <div className="modalBody">
                     <form>
                         <input type='text' placeholder="Nome pessoal" />

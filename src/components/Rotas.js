@@ -19,7 +19,6 @@ import Anuncios from './pages/Anuncios';
 import Favoritos from './pages/Favoritos';
 import Modal from './pages/Modal';
 
-
 import Dashboard from './pages/admin/Dashboard';
 import Estatisticas from './pages/admin/Estatisticas';
 import NotificacoesAdmin from './pages/admin/NotificacoesAdmin';
@@ -32,7 +31,12 @@ import Conta from './pages/Conta';
 import Promocoes from './pages/Promocoes';
 
 import PerfilPublico from './pages/PerfilPublico/PerfilPublico';
+import IndexAPS from './pages/Frms/AnunciarPSs/indexAPS.js';
+import Chat from './pages/Chat/Chat';
+import CadastrarU from './pages/Frms/Cadastrar/CadastrarU.js';
 import Shop from "./layout/User/Shop/Shop";
+import SideBar from './pages/SidebarUser/SideBarUser';
+import Seguranca from './pages/Seguranca/IndexSeguranca/IndexSeguranca';
 
 /* Importações da Conta Do Usuario */
 import IndexUser from './layout/User/IndexUser/IndexUser';
@@ -43,6 +47,8 @@ import Shield from './layout/User/Shield/Shield';
 import Publish from './layout/User/Publish/Publish';
 
 import PublishProduct from './layout/User/PublishProduct/PublishProduct';
+
+import Adm from './layout/Admin/Admin';
 
 function Rotas() {
   return (
@@ -72,6 +78,11 @@ function Rotas() {
         {/* ROTAS PUBLICAS*/}
         <Route element={<PerfilPublico />} path="/Usuario/index" exact />
         <Route element={<Shop />} path="/index/Usuario/Loja" exact />
+        <Route element={<Seguranca />} path="/Seguranca" exact />
+        <Route element={<IndexAPS />} path="/indexPSP" exact />
+        <Route element={<Chat />} path="/Chat" exact />
+        <Route element={<CadastrarU />} path="/CadastrarU" exact />
+        <Route element={<SideBar />} path="/SideBar" exact />
 
         {/* Rotas da Conta Do Usuario */}
         <Route element={<IndexUser />} path="/index/usuario" exact />
@@ -84,6 +95,8 @@ function Rotas() {
         <Route element={<PublishProduct/>} path="/index/usuario/Anunciar" exact />
 
         {/* Rotas do admin */}
+        <Route element={<Adm />} path="/adm" exact />
+
         <Route element={<Dashboard />} path="/admin" exact />
         <Route element={<Usuarios />} path="/admin/usuarios" exact />
         <Route element={<NotificacoesAdmin />} path="/admin/notificacoes" exact />

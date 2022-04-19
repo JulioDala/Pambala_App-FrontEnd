@@ -1,4 +1,8 @@
 .Adm{
     height: 100vh;
-    background: red;
+    background: whitesmoke;
+}
+
+.Adm .adm{
+    display: flex;
 }

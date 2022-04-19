@@ -204,6 +204,67 @@
 .cD .cDD{
     margin: 0 10px;
     border-bottom: 2px solid whitesmoke;
+} 
+
+.CD {
+    
+    padding: 2px;
+    display: flex;
+    background: whitesmoke;
+}
+
+.CD .Cd-space{
+    width: 40%;
+    padding: 5px;
+    background: white;
+    margin: 0px 5px 0px 0px;
+    border-bottom: rgba(45, 131, 212, 0.84) 3px solid;
+}
+
+.CD .Cd-space .Cd-img{
+    display: flex;
+    width: 100%;
+}
+
+.CD .Cd-space  .Cd-img img{
+    display: flex;    
+    width: 100%;
+}
+
+.CD .Cd-space .Cd-itens{
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.Cd-itens-A{
+    padding: 5px;
+    width: 80%;
+}
+
+.Cd-itens-B{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    text-align: center;
+}
+
+.Cd-itens-B button{
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    background: rgba(45, 131, 212, 0.84);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Cd-itens-A div h3, h4{
+   text-transform: initial;
 }
 
 .E{
@@ -241,7 +302,6 @@
 }
 
 .AB{
-    background: rgba(130, 177, 238, 0.541);
     border-left: 5px solid rgba(45, 131, 212, 0.84);
     padding: 10px;
     margin: 10px;

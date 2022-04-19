@@ -1,4 +1,96 @@
 .TopBar{
-    background: yellow;
     height: 10vh;
+    display: flex;
+    border-bottom: 2px solid rgba(32, 112, 204, 0.913);
+}
+.topbar{
+    width: 25vw;
+    height: 100%;
+    color: white;
+    padding: 5px;
+    background: rgba(32, 112, 204, 0.913);
+}
+
+.sga{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.topbar .sga img{
+    width: 50px;
+}
+
+.topbar-adm{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(32, 112, 204, 0.913);
+    align-items: center;
+    width: 100%;
+    background: white;
+}
+
+.topbar-adm .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topbar-adm .title .i{
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.5rem;
+}
+
+.topbar-adm .frm{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    color: white;
+    width: 100%;
+    padding: 5px;
+}
+
+.topbar-adm .frm form{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    color: white;
+    width: 100%;
+}
+
+.topbar-adm .frm form input{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    color: white;
+    width: 30%;
+    border: 1px rgba(32, 112, 204, 0.913) solid;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.topbar-adm .frm form button{
+    padding: 10px;
+    display: flex;
+    color: white !important;
+    border: none;
+    border: 1px rgba(32, 112, 204, 0.913) solid;
+    background: rgba(32, 112, 204, 0.913);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.topbar-adm .frm div img{
+    border-radius: 50%;
+    width: 50px;
+    margin: 0 10px;
+    border: 1px rgba(32, 112, 204, 0.913) solid;
+}
+
+.topbar-adm .title .i:hover{
+    color: red !important;
 }

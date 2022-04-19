@@ -49,6 +49,12 @@ import Publish from './layout/User/Publish/Publish';
 import PublishProduct from './layout/User/PublishProduct/PublishProduct';
 
 import Adm from './layout/Admin/Admin';
+import PUsuarios from './layout/Admin/Usuarios/Usuarios';
+import PNotificacoes from './layout/Admin/Notificacoes/Notificacoes';
+import PDenuncias from './layout/Admin/Denuncias/Denuncias';
+import PProduto from './layout/Admin/Categorias/Produto';
+import PServicos from './layout/Admin/Servicos/Servicos';
+import PDefinicoes from './layout/Admin/Definicoes/Definicoes';
 
 function Rotas() {
   return (
@@ -96,6 +102,12 @@ function Rotas() {
 
         {/* Rotas do admin */}
         <Route element={<Adm />} path="/adm" exact />
+        <Route element={<PUsuarios />} path="/adm/Usuarios" exact />
+        <Route element={<PNotificacoes />} path="/adm/Notificacoes" exact />
+        <Route element={<PDenuncias />} path="/adm/Denuncias" exact />
+        <Route element={<PProduto />} path="/adm/Categorias" exact />
+        <Route element={<PServicos />} path="/adm/Servicos" exact />
+        <Route element={<PDefinicoes />} path="/adm/Definicoes" exact />
 
         <Route element={<Dashboard />} path="/admin" exact />
         <Route element={<Usuarios />} path="/admin/usuarios" exact />

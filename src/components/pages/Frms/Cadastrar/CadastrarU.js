@@ -9,11 +9,10 @@ import Camera from "@mui/icons-material/CameraAlt"
 export default function CadastrarU({ closeModal }) {
     return (
         <>
-
             <div className="CdsmodalBackground">
                 <div className="CdsmodalContainer">
 
-                    <div className="modalBody">
+                    <div className="CdsmodalBody">
                         <div className='CDS'>
                             <div className='CdsHeader'>
                                 <div className=" cdsImg">

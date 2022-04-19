@@ -1,18 +1,17 @@
 import React from 'react';
-import './admin.css';
 
-import TopBar from './TopBar/Topbar';
-import SideBarAdm from './Sidebar/SidebarAdm';
-import Dashboard from './Dashboard/Dashboard'
+import TopBar from '../TopBar/Topbar';
+import SideBarAdm from '../Sidebar/SidebarAdm';
+import Servicos from '../Pages/Servicos/Servicos'
 
-export default function Administrador() {
+export default function ServicosAdm() {
     return (
         <>
             <div className='Adm'>
                 <TopBar />
                 <div className='adm'>
                     <SideBarAdm />
-                    <Dashboard />
+                    <Servicos />
                 </div>
             </div>
         </>

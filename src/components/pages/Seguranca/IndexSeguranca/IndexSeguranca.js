@@ -79,7 +79,74 @@ export default function Seguranca() {
                     <div className='AB'>
                         <h1>PAMBALAS</h1> <button>Saber mais</button>
                     </div>
-                  <div>EM CONSTRUÇÃO</div>
+                    <div className='CD'>
+                        <div className='Cd-space'>
+                            <div className='Cd-img'>
+                                <img src={imagem} alt='' />
+                            </div>
+                            <div className='Cd-itens'>
+                                <div className='Cd-itens-A'>
+                                    <div>
+                                        <h3>
+                                            Devo realmente confiar no PAMBALA?
+                                        </h3>
+                                    </div>
+                                    <div>
+                                        <h4>
+                                            As vendas com PAMBALA são mais seguras, mas fique atento às formas de fraude.
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='Cd-itens-B'>
+                                <button> Entender </button>
+                            </div>
+                        </div>
+                        <div className='Cd-space'>
+                            <div className='Cd-img'>
+                                <img src={imagem} alt='' />
+                            </div>
+                            <div className='Cd-itens'>
+                                <div className='Cd-itens-A'>
+                                    <div>
+                                        <h3>
+                                            Devo realmente confiar no PAMBALA?
+                                        </h3>
+                                    </div>
+                                    <div>
+                                        <h4>
+                                            As vendas com PAMBALA são mais seguras, mas fique atento às formas de fraude.
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='Cd-itens-B'>
+                                <button> Entender </button>
+                            </div>
+                        </div>
+                        <div className='Cd-space'>
+                            <div className='Cd-img'>
+                                <img src={imagem} alt='' />
+                            </div>
+                            <div className='Cd-itens'>
+                                <div className='Cd-itens-A'>
+                                    <div>
+                                        <h3>
+                                            Devo realmente confiar no PAMBALA?
+                                        </h3>
+                                    </div>
+                                    <div>
+                                        <h4>
+                                            As vendas com PAMBALA são mais seguras, mas fique atento às formas de fraude.
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='Cd-itens-B'>
+                                <button> Entender </button>
+                            </div>
+                        </div>
+                    </div>
                     <div className='AB'>
                         <h1>Como me proteger?</h1> <button>Saber mais</button>
                     </div>
@@ -100,7 +167,7 @@ export default function Seguranca() {
                                     </div>
                                     <h4 className='cD-cc'> O meu perfil é seguro? </h4>
                                     <div className='cD-cc'>
-                                        As vendas com OLX Pay são mais seguras, mas fique atento às formas de fraude no momento de confirmação do pagamento. Se você optou por ativar...
+                                        As vendas com pAMBALA são mais seguras, mas fique atento às formas de fraude no momento de confirmação do pagamento. Se você optou por ativar...
                                     </div>
                                 </div>
                             </div>
@@ -144,11 +211,11 @@ export default function Seguranca() {
                 <div className='E'>
                     <div>
                         <h2>Usar a PAMBALA é a forma mais segura, simples e prática de anunciar produtos on-line. Isso porque ao realizar suas transações em nossa plataforma, você...
-                        Fazer uma divulgação on-line na Pambala</h2>
+                            Fazer uma divulgação on-line na Pambala</h2>
                         <button>Anunciar</button>
-                    </div>              
+                    </div>
                 </div>
-                <FooterAdmin/>                
+                <FooterAdmin />
             </div>
 
             {/*

@@ -13,6 +13,7 @@ import Logo from '../../logo2.png';
 import Logotipo from "../../logo.png"
 
 import Login from '../pages/Login/Login';
+import Cadastro from '../pages/Frms/Cadastrar/CadastrarU';
 import {useState} from 'react';
 
 const pages = ['Casa', 'Loja', 'contacto', 'Entrar', 'Anunciar Produto'];
@@ -38,10 +39,12 @@ const ResponsiveAppBar = () => {
     setAnchorElUser(null);
   };
   const [AbrirLogin, setFecharLogin] = useState(false);
+  const [AbrirCadastro, setFecharCadastro] = useState(false);
   return (
 
     <header>
       { AbrirLogin && <Login closeModal={setFecharLogin} />}
+      { AbrirCadastro && <Cadastro closeModal={setFecharCadastro} />}
       <div class="header-1">
         <a href="/" class="logo"> <img src={Logotipo} className="Logo-Logotipo" alt='' /> </a>
         <div class="form-container">
@@ -59,7 +62,7 @@ const ResponsiveAppBar = () => {
             <ul>
               <li> <Link to="/">Início</Link> </li>
               <li><Link to="/Loja">Produtos</Link></li>
-              <li><Link to="#">Cadastrar</Link></li>
+              <li><Link to="#" onClick={() => {setFecharCadastro(true);}}>Cadastrar</Link></li>
               <li>  {localStorage.getItem('&app-token') ? <Link to="/">Sair</Link> : <Link to="#" onClick={() => {setFecharLogin(true);}}>Entrar</Link>}  </li>
             </ul>
           </nav>

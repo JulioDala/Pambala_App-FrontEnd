@@ -1,0 +1,56 @@
+.srv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.srv .cbtn{
+    width: 100%;
+}
+
+.srv .cbtn button{
+    padding: 5px;
+    border: none;
+    background: cornflowerblue;
+    color: white;
+    border-radius: 5px;
+}
+
+.srv .frm{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    
+    margin-bottom: 10px;
+}
+
+.srv .frm form{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+.srv .frm form input{
+    width: 100%;
+    padding: 5px;
+}
+
+.cfrm table{
+    width: 100%;
+}
+
+.cfrm table tr:nth-child(1) {
+    background: cornflowerblue;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.cfrm table tr{
+    background: white;
+
+}
+
+.cfrm table tr td button{
+    margin: 5px;
+    border: none;
+    background: white;    
+}

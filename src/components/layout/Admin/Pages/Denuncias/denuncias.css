@@ -1,0 +1,50 @@
+.cDnc{
+    display: flex;
+}
+.Dnc{
+    background: white;
+    padding: 10px;    
+    border-bottom: 2px solid rgba(0, 119, 255, 0.678);
+    box-shadow: rgba(255, 255, 255, 0.696);
+    margin: 0 5px;
+}
+
+.Dnc .img{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+
+.Dnc .date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2px;
+}
+
+.Dnc .date .d{
+    width: 100%;
+}
+
+.Dnc .img img{
+    display: flex;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    border: 2px solid rgba(0, 119, 255, 0.678);
+}
+
+.Dnc .Dnc-btn{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.696);
+}
+
+.Dnc .Dnc-btn button{
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px;
+    background: white;
+    border: none;
+}

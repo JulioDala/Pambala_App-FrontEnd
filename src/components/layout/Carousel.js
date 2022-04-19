@@ -35,15 +35,15 @@ const Carousel = () => {
                     <img src={image2} alt="" style={{ width: '100%', height: '85vh' }} />
                     <div className="contents">
                         <h1 style={{fontSize: '5rem'}}>Produtos com Qualidade</h1>
-                        <p style={{fontSize: '2rem'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, neque.</p>
+                        <p style={{fontSize: '2rem'}}>Os produtos disponiveis na plataforma são os melhores do mercado.</p>
                         <a href="#"><button class="btn">Ver mais</button></a>
                     </div>
                 </div>
                 <div className="allitem">
                     <img src={image3} alt="" style={{ width: '100%', height: '85vh' }} />
                     <div className="contents">
-                        <h1 style={{fontSize: '5rem'}}>heavy discounts</h1>
-                        <p style={{fontSize: '2rem'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, neque.</p>
+                        <h1 style={{fontSize: '5rem'}}>Serviços</h1>
+                        <p style={{fontSize: '2rem'}}>Busque e encontre os melhores serviços.</p>
                         <a href="#"><button class="btn">Ver mais</button></a>
                     </div>
                 </div>

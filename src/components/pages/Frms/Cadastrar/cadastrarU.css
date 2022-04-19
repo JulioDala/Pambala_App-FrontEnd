@@ -57,8 +57,10 @@
 .CdsmodalContainer{
     width: 350px;
     height: 600px;
+    border-radius: 5px;
     background-color: white;
     flex-direction: column;
+    position: relative;
     padding: 15px;
 }
 

@@ -1,0 +1,89 @@
+:root{
+    --blue: rgba(32, 112, 204, 0.913);
+    --white: #fff;
+}
+.Dashboard{
+    width: 80vw;
+    padding: 10px;
+    background: transparent;
+}
+
+.Dashboard .dashboard{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Dashboard .item{
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: var(--white);
+}
+
+.Dashboard .item h3{
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.cItem-Icon{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cItem-Icon .i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--blue);
+    font-size: 6rem;
+}
+
+.dsh-frm table{
+    margin: 10px 0;
+}
+
+.dsh-frm table{
+    width: 100%;
+}
+
+.dsh-frm table tr:nth-child(1){
+    background: cornflowerblue;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.dsh-frm table tr{
+    background: white;
+}
+
+.dsh-frm table tr td{
+    font-size: 1.2rem;
+}
+
+.dsh-frm table tr td button{
+    border: none;
+    margin: 0 10px;
+    background: white;
+}
+
+.dsh-frm .dsh{
+    display: flex;
+}
+
+.dsh-frm .dsh .table{
+    width: 100%;
+}
+.dsh-frm .dsh .Chart{
+    width: 100%;
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    background: cornflowerblue;
+}

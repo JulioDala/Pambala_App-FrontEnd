@@ -1,0 +1,64 @@
+.Utable{
+    width: 100%;
+}
+
+.Utable table{
+    width: 100%;
+}
+
+.Utable table tr:nth-child(1){
+    background: rgba(0, 119, 255, 0.678);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+}
+
+.Utable table tr{
+    font-size: 1.3rem;
+    background-color: white;
+}
+
+.Utable table tr td{
+    border-bottom: rgba(0, 119, 255, 0.678) 0.1px solid;
+}
+
+.Utable table tr td button{
+    border: none;
+    background-color: white;
+    padding: 5px 8px;
+
+}
+
+.Utable table tr td button:hover{
+    transition: 0.3s;
+    border: none;    
+    border-radius: 50%;
+    padding: 5px 8px;
+    color: rgba(0, 119, 255, 0.678) !important;
+    background: whitesmoke;
+}
+
+.Utable table tr td button .i{
+}
+
+.Usearch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.Usearch form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Usearch form input{
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    border: rgba(0, 119, 255, 0.678) 0.1px solid;
+    font-size: 1.1rem;
+}

@@ -3,6 +3,10 @@
 :root{
     --blue:rgb(53, 118, 202);
 }
+body
+{
+    background: white;
+}
 
 *{
     font-family: 'Open Sans', sans-serif;
@@ -14,7 +18,7 @@
 }
 .Logo-Logotipo{
     width: 6%;
-    background: rgb(53, 118, 202);
+    background: rgb(0, 0 , 0, 0.6);
     border-radius: 20%;
     display: block;
 }
@@ -55,7 +59,7 @@ html{
     margin:0 auto;
 }
 .header-1{
-    background: rgb(44, 44, 44);
+    background: rgb(0, 0 , 0, 0.1);
 }
 
 .heading span{

@@ -1,0 +1,45 @@
+.lNot{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.clNotImg{
+    display: flex;
+}
+
+.clNotDate{
+    margin: 0 10px;
+    padding: 0px;
+}
+
+.clNotDate h4{
+   color: rgba(32, 112, 204, 0.913);
+   font-weight: 600;
+}
+
+.clNotDate h5{
+    color: black;
+ }
+
+ .clNotDate h6{
+    color: black;
+ }
+
+.clNotImg img{
+    border-radius: 50%;
+    border: 1px solid rgba(32, 112, 204, 0.913);
+}
+
+.Dashboard .ccNot .lk{
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    text-transform: none;
+    margin: 0 0 5px 0;
+}

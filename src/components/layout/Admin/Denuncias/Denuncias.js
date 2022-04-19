@@ -1,18 +1,18 @@
 import React from 'react';
-import './admin.css';
+import './denuncias.css';
 
-import TopBar from './TopBar/Topbar';
-import SideBarAdm from './Sidebar/SidebarAdm';
-import Dashboard from './Dashboard/Dashboard'
+import TopBar from '../TopBar/Topbar';
+import SideBarAdm from '../Sidebar/SidebarAdm';
+import Denuncias from '../Pages/Denuncias/Denuncias'
 
-export default function Administrador() {
+export default function DenunciasAdm() {
     return (
         <>
             <div className='Adm'>
                 <TopBar />
                 <div className='adm'>
                     <SideBarAdm />
-                    <Dashboard />
+                    <Denuncias />
                 </div>
             </div>
         </>

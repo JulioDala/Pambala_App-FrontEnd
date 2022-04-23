@@ -9,7 +9,7 @@ export default function pNotificacoesAdm() {
         <>
             <div className='Dashboard'>
                 <div className='ccNot'>
-                    <Link to='' className='lk'>
+                    <Link to='/adm/Notificacoes/Conteudo' className='lk'>
                         <div className='lNot'>
                             <div className='clNotImg'>
                                 <img src={Img} alt='Foto' />
@@ -21,7 +21,7 @@ export default function pNotificacoesAdm() {
                             </div>
                         </div>
                     </Link>
-                    <Link to='' className='lk'>
+                    <Link to='/adm/Notificacoes/Conteudo' className='lk'>
                         <div className='lNot'>
                             <div className='clNotImg'>
                                 <img src={Img} alt='Foto' />

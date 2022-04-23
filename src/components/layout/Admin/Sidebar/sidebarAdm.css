@@ -20,6 +20,16 @@
     color: white;
 }
 
+.SideBarAdm div ul .lSBA:active{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: 600;
+    color: red;
+}
+
 .SideBarAdm div ul .lSBA .i{
     font-size: 2rem;
 }

@@ -1,4 +1,4 @@
-.AddSubProd{
+.DelProd{
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.664);
@@ -9,9 +9,9 @@
     transition: 3s;
 }
 
-.AddSubProd .containerAdm{
+.DelProd .containerAdm{
     width: 300px;
-    height: 210px;
+    height: 120px;
     border-radius: 5px;
     background-color: white;
     box-shadow: rgb(189, 189, 189);
@@ -19,43 +19,24 @@
     padding: 15px;
 }
 
-.AddSubProd .containerAdm form{
-    width: 100%;
-}
-
-.AddSubProd .containerAdm form h4{
+.DelProd .containerAdm h4{
     width: 100%;
     text-transform: initial;
-    color: cornflowerblue;
     font-weight: 600;
 }
 
-.AddSubProd .containerAdm form h6{
+.DelProd .containerAdm form h6{
     width: 100%;
     text-transform: initial;
     margin: 10px 0;
 }
 
-.AddSubProd .containerAdm form input{
-    width: 100%;
+.DelProd .containerAdm button{
+    width: 45%;    
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid cornflowerblue;
-}
-
-.AddSubProd .containerAdm form button{
-    width: 100%;    
-    padding: 10px;
-    border-radius: 5px;
-    margin: 5px 0;
-}
-
-.AddSubProd .containerAdm form button{
-    width: 100%;    
-    padding: 10px;
-    border-radius: 5px;
-    margin: 5px 0 2px 0;
-    background: cornflowerblue;
+    margin: 5px;
+    background: black;
     color: white;
     font-weight: 500;
     font-size: 1.2rem;

@@ -5,14 +5,23 @@ import { Link } from 'react-router-dom';
 import Business from '@mui/icons-material/Delete'
 import DynamicFeed from '@mui/icons-material/Edit'
 
-export default function pProdutosAdm(){
+import Produto from '../../Modal/Produto/Produto'
+
+import { useState } from 'react'
+import DelProd from '../../Modal/Deletar/Produto/Produto';
+
+export default function PProdutosAdm(){
+    const [abr, fch] = useState(false);
+    const [Abr, Fch] = useState(false);
     return(
         <>
+        { abr && <Produto closeModal={fch} />}
+        { Abr && <DelProd closeModal={Fch} />}
         <div className='Dashboard'>
             <div>
-                <div className='cmdPdt'>
+                <div className='cmdPdt'> 
                     <div className='cmd'>
-                        <button>Adicionar</button>
+                        <button  onClick={() => {fch(true);}}>Adicionar</button>
                     </div>
                     <div className='cmd'>
                         <form>
@@ -34,7 +43,7 @@ export default function pProdutosAdm(){
                             <td>12 / 02 / 2022</td>
                             <td>
                             <button> <DynamicFeed/> </button>
-                            <button> <Business/> </button>
+                            <button onClick={() => {Fch(true);}}> <Business/> </button>
                             </td>
                         </tr>
                     </table>

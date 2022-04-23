@@ -1,0 +1,45 @@
+.pDashboard span{
+    background: rgba(128, 128, 128, 0.558);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.pConteudo .ctrl button{
+    padding: 10px;
+    margin: 10px;
+    width: 160px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: cornflowerblue;
+}
+
+.pDashboard .ppConteudo{
+    margin: 20px;
+}
+
+.pDashboard .ppConteudo h4{
+    margin: 20px;
+    text-align: center;
+}
+
+.pDashboard .ppConteudo h3{
+    margin: 20px;
+    text-align: center;
+}
+
+.pDashboard .pconteudo{
+    width: 40%;
+    border-radius: 5px;
+    border: 2px solid rgb(204, 204, 204);
+}
+
+.pDashboard .ppConteudo .prtConteudo{
+    display: flex;
+    justify-content: center;
+}
+
+.pDashboard .ppConteudo .prtConteudo .i{
+    font-size: 2.5rem;
+    color: cornflowerblue;
+}

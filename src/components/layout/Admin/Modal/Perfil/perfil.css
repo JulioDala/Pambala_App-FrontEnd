@@ -1,0 +1,108 @@
+.PerfilAdm{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.664);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 3s;
+}
+
+.PerfilAdm .containerAdm{
+    width: 800px;
+    height: 640px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: rgb(189, 189, 189);
+    flex-direction: column;
+    padding: 15px;
+}
+
+.PerfilAdm .containerAdm .bd{
+    display: flex;
+    justify-content: space-around;
+}
+
+.PerfilAdm .containerAdm .bd .FC{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.PerfilAdm .containerAdm .bd .FC .Foto{
+    display: flex;
+    justify-content: end;
+}
+
+.PerfilAdm .containerAdm .bd .FC .Foto button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    background: cornflowerblue;
+}
+
+.PerfilAdm .containerAdm .bd .FC .Conteudo{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: left;
+}
+
+.PerfilAdm .containerAdm .bd .FC .Conteudo fieldset{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    margin-bottom: 3px;
+}
+
+.PerfilAdm .containerAdm .bd .FC .Conteudo fieldset legend{
+    color: cornflowerblue;
+}
+
+.PerfilAdm .containerAdm .bd .FC .Conteudo .spc{
+    width: 100%;
+}
+
+.PerfilAdm .containerAdm .bd .FC .Conteudo .space{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 3px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.PerfilAdm .containerAdm .bd .FC .Conteudo .space:nth-last-child(1){ 
+    border-bottom: 0px solid whitesmoke;
+}
+
+.PerfilAdm .containerAdm .bd .FC .Conteudo .space:nth-last-child(1){ 
+    border-bottom: 0px solid whitesmoke;
+    
+    margin-bottom: 0px;
+    
+}
+
+.PerfilAdm .containerAdm .bd .FC .Conteudo .space h6{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.PerfilAdm .containerAdm .bd .FC .Conteudo .space h4{    
+    font-weight: 500;
+}
+
+.PerfilAdm .containerAdm .bd .FC .Foto img{
+    width: 150px;
+    border-radius: 50%;
+    border: 2px cornflowerblue solid;
+    
+    margin-bottom: 10px;
+}

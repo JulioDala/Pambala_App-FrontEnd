@@ -39,44 +39,7 @@ export default function Dashboard() {
                         </div>
                     </div>
                 </div>
-                <div className='dsh-frm'>
-                    <div className='dsh'>
-                        <div className='table'>
-                            <table>
-                                <tr>
-                                    <td> ID </td>
-                                    <td> Nome </td>
-                                    <td> Email </td>
-                                    <td> Data de Registro</td>
-                                    <td> Controles </td>
-                                </tr>
-                                <tr>
-                                    <td> 46546 </td>
-                                    <td> Julio Dala </td>
-                                    <td> jdulio@gmail.com </td>
-                                    <td> 04 / 03 / 2022</td>
-                                    <td>
-                                        <button> <SelectAll /> </button>
-                                        <button> <Delete className='i' /> </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td> 46546 </td>
-                                    <td> Julio Dala </td>
-                                    <td> jdulio@gmail.com </td>
-                                    <td> 04 / 03 / 2022</td>
-                                    <td>
-                                        <button> <SelectAll /> </button>
-                                        <button> <Delete className='i' /> </button>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div className='Chart'>
-                            chart
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </>
     )

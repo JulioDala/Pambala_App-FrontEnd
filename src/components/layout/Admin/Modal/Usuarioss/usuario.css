@@ -21,7 +21,7 @@
 
 .mContainer{
     width: 300px;
-    height: 600px;
+    height: 500px;
     border-radius: 5px;
     background-color: white;
     box-shadow: rgb(189, 189, 189);
@@ -73,4 +73,18 @@
 
 .mBody .date{
     margin-bottom: 15px;
+}
+
+.usrCrtl{
+    display: flex;
+    justify-content: right;
+}
+
+.usrCrtl button{
+    color: white;
+    background: cornflowerblue;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    margin: 5px;
 }

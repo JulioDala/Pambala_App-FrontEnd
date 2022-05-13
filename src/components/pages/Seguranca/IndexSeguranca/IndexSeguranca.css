@@ -190,6 +190,7 @@
 
 .cD-Space{
     border-radius: 20px;
+    height: 250px;
 }
 
 .cD-cc{
@@ -202,7 +203,9 @@
 }
 
 .cD .cDD{
-    margin: 0 10px;
+    margin: 0 5px;
+    
+    height: 400px;
     border-bottom: 2px solid whitesmoke;
 } 
 
@@ -215,6 +218,7 @@
 
 .CD .Cd-space{
     width: 40%;
+    height: 40%;
     padding: 5px;
     background: white;
     margin: 0px 5px 0px 0px;
@@ -229,6 +233,8 @@
 .CD .Cd-space  .Cd-img img{
     display: flex;    
     width: 100%;
+background: red;
+    height: 200px;
 }
 
 .CD .Cd-space .Cd-itens{
@@ -240,6 +246,7 @@
 .Cd-itens-A{
     padding: 5px;
     width: 80%;
+    height: 250px;
 }
 
 .Cd-itens-B{
@@ -318,4 +325,10 @@
     background: rgba(45, 131, 212, 0.84);
     font-size: 1.5rem !important;
 
+}
+
+
+.segImg{
+   width: 300px;
+   height: 200px;
 }

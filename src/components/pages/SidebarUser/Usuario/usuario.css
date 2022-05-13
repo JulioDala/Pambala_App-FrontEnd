@@ -6,7 +6,18 @@
 }
 .container-usr{
     display: flex;
+
 }
+
+.btn-delete{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: red;
+    margin: 5px;
+}
+
 .usuario{
     background-color: white;
     border: rgb(224, 224, 224) 2px solid;

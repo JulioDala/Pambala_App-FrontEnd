@@ -30,17 +30,11 @@ const Perfil = ({ closeModal }) => {
                                             <h6> Nome </h6>
                                             <h4> Manuel Armindo </h4>
                                         </div>
-                                        <div>
-                                            <Editar />
-                                        </div>
                                     </div>
                                     <div className='space'>
                                         <div>
                                             <h6> Data de Nascimento </h6>
                                             <h4> 22 de Outubro de 2015 </h4>
-                                        </div>
-                                        <div>
-                                            <Editar />
                                         </div>
                                     </div>
                                     <div className='space'>
@@ -49,17 +43,11 @@ const Perfil = ({ closeModal }) => {
                                             <h6> Sexo </h6>
                                             <h4> Homem </h4>
                                         </div>
-                                        <div>
-                                            <Editar />
-                                        </div>
                                     </div>
                                     <div className='space'>
                                         <div>
                                             <h6> Provincia </h6>
                                             <h4> Luanda </h4>
-                                        </div>
-                                        <div>
-                                            <Editar />
                                         </div>
                                     </div>
                                     <div className='space'>
@@ -67,38 +55,24 @@ const Perfil = ({ closeModal }) => {
                                             <h6> Municipio </h6>
                                             <h4> Cacuaco </h4>
                                         </div>
-                                        <div>
-                                            <Editar />
-                                        </div>
                                     </div>
                                     <div className='space'>
                                         <div>
                                             <h6> Bairro </h6>
                                             <h4> Paraiso </h4>
                                         </div>
-                                        <div>
-                                            <Editar />
-                                        </div>
                                     </div>
                                 </fieldset>
                                 <fieldset>
-                                    <legend>Informações de Contacto</legend>
+                                    <legend>Contactos</legend>
                                     <div className='space'>
                                         <div>
                                             <h6> Telefone </h6>
                                             <h4> 934678543 </h4>
                                         </div>
                                         <div>
-                                            <Editar />
-                                        </div>
-                                    </div>
-                                    <div className='space'>
-                                        <div>
                                             <h6> E-mail </h6>
                                             <h4> mirandamindo@gmail.com </h4>
-                                        </div>
-                                        <div>
-                                            <Editar />
                                         </div>
                                     </div>
                                 </fieldset>
@@ -109,9 +83,6 @@ const Perfil = ({ closeModal }) => {
                                         <div>
                                             <h6> Palavra-Passe </h6>
                                             <h4> xxxxxxxx </h4>
-                                        </div>
-                                        <div>
-                                            <Editar />
                                         </div>
                                     </div>
                                 </fieldset>

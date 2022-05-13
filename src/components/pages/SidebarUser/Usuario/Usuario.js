@@ -12,6 +12,7 @@ import Navbar from '../../../layout/Navbar'
 import PersonAddPlus from '@mui/icons-material/Home'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import PhoneIcon from '@mui/icons-material/Phone';
+import Key from '@mui/icons-material/Key';
 import EmailIcon from '@mui/icons-material/Email';
 import PlaceIcon from '@mui/icons-material/Place';
 import ModalUsuarioInfo from './ModalUsuario/ModalUsuarioInfo/ModalUsuarioInfo';
@@ -30,9 +31,10 @@ export default function Promocoes() {
             { openModal3 && <ModalUsuarioQualificacoes closeModal={setOpenModal3} />}
             { openModal && <ModalUsuarioInfo closeModal={setOpenModal} />}  
           
+<Navbar/>
 
             <div className='container-usr'>
-                
+                <SideBarUser/>
                 <div className='container-usr-box'>
                     <div className='usuario'>
                         <div className='usuario-usuario'>
@@ -95,65 +97,24 @@ export default function Promocoes() {
                                 onClick={() => {setOpenModal2(true);}} > Editar </button>
                         </div>
                     </div>
-
-
-                    <div className='usuario'>
+                     <div className='usuario'>
                         <div className='usuario-usuario'>
 
                             <div className='usuario-usuario-space'>
-                                <span className='usuario-usuario-nome'> Qualificações e Experiências </span>
-                                <table>
-                                    <th>
-                                        Computadores / Hardware / Reparação
-                                    </th>
-
-                                    <tr>
-                                        <td> Anos de Experiencia </td>
-                                        <td> Nível de Qualificações </td>
-                                        <td> Licenciado/Certificado </td>
-                                        <td> Registro de Ingressão </td>
-                                    </tr>
-                                    <tr>
-                                        <td> 4 </td>
-                                        <td> Sim  </td>
-                                        <td> Sim </td>
-                                        <td> 22 de Outubro de 2020 </td>
-                                    </tr>
-
-                                </table>
-
-                                <table>
-                                    <th>
-                                        Educação / Ciência / Professor
-                                    </th>
-
-                                    <tr>
-                                        <td> Anos de Experiencia </td>
-                                        <td> Nível de Qualificações </td>
-                                        <td> Licenciado/Certificado </td>
-                                        <td> Registro de Ingressão </td>
-                                    </tr>
-                                    <tr>
-                                        <td> 4 </td>
-                                        <td> Sim  </td>
-                                        <td> Sim </td>
-                                        <td> 22 de Outubro de 2020 </td>
-                                    </tr>
-
-                                </table>
-
-
+                                <span className='usuario-usuario-nome'> Informação de Segurança </span>
+                                <div className='usuario-usuario-space usuario-icon-item'>
+                                    <Key className='usuario-icon' />  <span className='usuario-usuario-data'> x x x x x x x </span>
+                                </div>
                             </div>
                         </div>
                         <div className='container-usuario-editar'>
-                            <button className='btn-edit-user' onClick={() => {setOpenModal3(true);}}> Adicionar </button>
+                            <button className='btn-edit-user'                                 
+                                onClick={() => {setOpenModal2(true);}} > Editar </button>
                         </div>
                     </div>
-
-                </div>
-            
-            </div>
-                  
+                    <button  className='btn-delete'> Eliminar Conta </button>
+                </div>            
+            </div>                  
         </div >
     )
 }

@@ -15,11 +15,12 @@ import watch2 from '../../img/watch2.jpg';
 import watch3 from '../../img/watch3.jpg';
 import watch4 from '../../img/watch4.jpg';
 
-
 import FooterAdmin from '../FooterAdmin';
 import Navbar from '../layout/Navbar';
 
 import './Home.css';
+import Recent from './Recent/Recent.js';
+import Avaliar from './Frms/Avaliar/Avaliar.js'
 import './Loja.css';
 import Produto from './Produto';
 import api from '../services/api';
@@ -61,19 +62,28 @@ function Home() {
 
   let navigate = useNavigate()
 
+const [AbrirAvaliar, setFecharAvaliar] = useState(false);
   return (
     <ThemeProvider theme={mdTheme}>
+    { AbrirAvaliar && <Avaliar closeModal={setFecharAvaliar} />}
       <Navbar />
       <Carousel />
       <Box sx={{ flexGrow: 1, m: 1, }}>
+
         <h1 class="heading"> <span> Anúncios recentes </span> </h1>
         {/* End hero unit */}
-        <div data-aos="fade-up" className="products">
-          <div className="productContainer" >
+        
+
+      <Recent/>
+         
+
+         <div className="productContainer" >
             {produto.map((produto) => (
               <div className="productCard" >
                 <div className="imgBx">
-                    <img src={'http://localhost:3003/Images/' + produto.imagem} />
+                <h1>NOVO CARD</h1>
+                    <img src={watch1}  alt=''/>
+                    <img src={watch1}  alt=''/>
                     <ul className="action">
                         <li>
                             <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" /></svg></i>
@@ -103,7 +113,7 @@ function Home() {
             </div>
             ))}
           </div>
-        </div>
+        
         <h1 className="heading"> <span> Produto em Destaque </span> </h1>
         <section data-aos="fade-left" className="featured" id="featured">
           <div className="rowImage">
@@ -167,7 +177,7 @@ function Home() {
           <p>Avalie-nos e ajude-nos a melhorar</p>
           <form action="">
             <input type="email" placeholder="Digite seu email" />
-            <input type="submit" className="btn" value="Avaliar" />
+            <input type="button" onClick={() => {setFecharAvaliar(true);}} className="btn" value="Avaliar" />
           </form>
 
         </section>

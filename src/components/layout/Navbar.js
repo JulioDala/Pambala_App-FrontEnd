@@ -46,7 +46,7 @@ const ResponsiveAppBar = () => {
       { AbrirLogin && <Login closeModal={setFecharLogin} />}
       { AbrirCadastro && <Cadastro closeModal={setFecharCadastro} />}
       <div class="header-1">
-        <a href="/" class="logo"> <img src={Logotipo} className="Logo-Logotipo" alt='' /> </a>
+        <a href="/" class="logo"> <img src={Logotipo} className="logo-logo" alt='' /> </a>
         <div class="form-container">
           <div className='container-form-container'>
             <form action="">

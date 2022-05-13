@@ -1,14 +1,28 @@
 .SideBarAdm{
-    background: rgba(32, 112, 204, 0.913);
+    background: #2196F3;
     height: 100vh;
-    width: 20.4vw;
-    padding-top: 5%;
+    width: 20.1vw;
 }
 
 .SideBarAdm div ul{
     list-style: none;
 }
 
+.SideBarAdm .Menu{
+    margin-top: 10px;
+}
+
+.SideBarAdm .Logo{
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+
+}
+
+.SideBarAdm .Logo img{
+    width: 130px;  
+}
 
 .SideBarAdm div ul .lSBA{
     text-decoration: none;
@@ -42,4 +56,65 @@
 .SideBarAdm div ul li{
     margin: 0 0 0 10px;
     text-decoration: none;
+}
+
+@media (max-width:600px) {
+           .SideBarAdm{
+    background: rgba(32, 112, 204, 0.913);
+    display: none;
+}
+
+.SideBarAdm div ul{
+    list-style: none;
+}
+
+.SideBarAdm .Menu{
+    margin-top: 10px;
+}
+
+.SideBarAdm .Logo{
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+
+}
+
+.SideBarAdm .Logo img{
+    width: 110px;  
+}
+
+.SideBarAdm div ul .lSBA{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: 600;
+    color: white;
+}
+
+.SideBarAdm div ul .lSBA:active{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: 600;
+    color: red;
+}
+
+.SideBarAdm div ul .lSBA .i{
+    font-size: 2rem;
+}
+
+.SideBarAdm div ul .lSBA:hover{
+    background: whitesmoke;
+    color: rgba(32, 112, 204, 0.913);
+}
+
+.SideBarAdm div ul li{
+    margin: 0 0 0 5px;
+    text-decoration: none;
+}
 }

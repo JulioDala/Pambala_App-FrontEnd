@@ -55,9 +55,6 @@ function Entrar()
     return (
         <div className="Login">
             <div className="ccLogin">
-                <div className="titleCloseBtn">
-                    <button onClick={() => closeModal(false)} > X </button>
-                </div>
                 <div className="modalTitle">
                     <Perfil className="ssP" />
                     <h1>login</h1>

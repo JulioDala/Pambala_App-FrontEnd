@@ -18,7 +18,7 @@ const Footer = () => {
             <div className="box-container">
 
                 <div className="box">
-                    <a href="/" className="logo"> <img src={Logotipo} className="Logotipo" alt='' /> <span className="Logo-Title"> Pambala </span>  </a>
+                    <a href="/" className="logo"> <img src={Logotipo} className="logo-logo" alt='' /> <span className="Logo-Title">  </span>  </a>
                     <p className="Descrition-logo">Uma nova plataforma eficiente e sustentavel, desenvolvida para o rico beneficio dos seus usuarios, para que possam divulgar os seus produtos e dar a conhecer os seus serviços.</p>
                 </div>
 

@@ -1,0 +1,67 @@
+.mSeguranca{
+	z-index: 3;
+	background: white;
+	width: 50vw;
+	height: 90vh;
+	border-radius: 5px;
+	overflow: auto;
+	transition: 0.3s;
+}
+
+.mSeguranca .titulo{
+	padding: 10px;
+	border-bottom: 2px solid  whitesmoke;
+	transition: 0.3s;
+
+
+}
+
+.mSeguranca .titulo button{
+	padding: 0px;
+	border: none;
+	background: none;
+	color:  rgb(53, 118, 202);
+	transform: rotate(90deg);
+	transition: 0.3s;
+	float: right;
+}
+
+.mSeguranca .titulo span{
+	color: rgb(53, 118, 202);
+	font-size: 2rem;
+	padding: 10px;
+	transition: 0.3s;
+	text-transform: initial;
+}
+
+.mSeguranca .corpo{
+	display: none;
+	padding: 5px 15px 0 15px;
+	text-align: justify;
+	text-transform: initial;
+	transition: 0.3s;
+
+	font-size: 1.2rem;
+}
+
+.mSeguranca .titulo:hover button{
+	transform: rotate(270deg);
+	transition: 0.3s;
+}
+
+.mSeguranca .titulo:hover{
+	color: white;
+	transition: 0.3s;
+	border-bottom: 0.1px solid rgb(53, 118, 202);
+}
+
+.mSeguranca .titulo:hover span{
+	transition: 0.3s;
+}
+
+.mSeguranca .titulo:hover .corpo{
+	color: black;
+	border-top: 1px solid whitesmoke;
+	display: block;
+	transition: 0.3s;
+}

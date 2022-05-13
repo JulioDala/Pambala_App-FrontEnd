@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: center;
     transition: 3s;
+    z-index: 3;
 }
 
 .Login:focus body{

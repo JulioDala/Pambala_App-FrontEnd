@@ -1,0 +1,58 @@
+.CmodalContainer{
+	width: 300px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+	height: 210px;
+}
+
+.modalBackground{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.664);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 3s;
+}
+
+.CmodalContainer .modalBody .frm input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid whitesmoke;
+}
+
+.CmodalContainer .modalBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.CmodalContainer .modalFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CmodalContainer .modalFooter button{
+    width: 50%;
+    height: 35px;
+    margin: 5px;
+    border: none;
+    background: var(--bordas);
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.CmodalContainer .modalFooter button:hover{    
+    background: cornflowerblue;   
+}

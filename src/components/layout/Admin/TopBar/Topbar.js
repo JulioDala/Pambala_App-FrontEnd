@@ -17,9 +17,7 @@ export default function TopBar() {
         { abrir && <Perfil closeModal={fechar} />}
             <div className='TopBar'>
                 <div className='topbar'>
-                <div className='sga'>                    
-                    <img src={Logo} alt='Logo' /> <h5>PAMBALA</h5>
-                </div>
+                
                 </div>
                 <div className='topbar-adm'>
                     <div className='title'>

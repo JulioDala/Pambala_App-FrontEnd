@@ -24,12 +24,23 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import tenis from '../../img/g_img5.jpg';
 
+import Recent from './Recent/Recent.js';
+
 import FooterAdmin from '../FooterAdmin';
 import Navbar from '../layout/Navbar';
 import Produto from './Produto';
 import api from '../services/api';
 import Paginacao from '../layout/Paginacao';
-;
+
+
+import img from '../../img/watch4.jpg'
+
+
+
+import Person from '@mui/icons-material/Person';
+import Money from '@mui/icons-material/Money';
+import Favorite from '@mui/icons-material/Favorite';
+import Tv from '@mui/icons-material/Tv';
 
 
 // import Item from '@mui/material/Item';
@@ -207,10 +218,131 @@ function Loja() {
               </CardContent>
             </Card>
 
+
+
+<div className='CardProduts'  data-aos="fade-left" >
+        <div className='Card'>
+          <div className='item'>
+            <div className='img'>
+              <img src={img} alt='' />
+            </div>
+            <div className='details'>
+              <h2>Relógio Ultra</h2>
+              <h5>Produto</h5>
+              <h5>3 meses atras</h5>
+              <h5><Person/> Fabricio Marcos</h5>
+              <h5><Money/> 15.000.00 kz</h5>
+
+              <Rating className='rate rt' />
+              <h5> <span></span> desconto</h5>
+              <h5> <span></span> Disponivel</h5>
+
+            </div>
+            <div className='ctrl'>
+              <button><Tv/></button>
+              <button><Favorite/></button>
+            </div>
+          </div>
+
+          <div className='item'>
+            <div className='img'>
+              <img src={img} alt='' />
+            </div>
+            <div className='details'>
+              <h2>Relógio Ultra</h2>
+              <h5>Produto</h5>
+              <h5>3 meses atras</h5>
+              <h5><Person/> Fabricio Marcos</h5>
+              <h5><Money/> 15.000.00 kz</h5>
+              
+              <Rating className='rate rt' />
+              <h5> <span></span> desconto</h5>
+              <h5> <span></span> Disponivel</h5>
+
+            </div>
+            <div className='ctrl'>
+              <button><Tv/></button>
+              <button><Favorite/></button>
+            </div>
+          </div>
+<div className='item'>
+            <div className='img'>
+              <img src={img} alt='' />
+            </div>
+            <div className='details'>
+              <h2>Relógio Ultra</h2>
+              <h5>Produto</h5>
+              <h5>3 meses atras</h5>
+              <h5><Person/> Fabricio Marcos</h5>
+              <h5><Money/> 15.000.00 kz</h5>
+              
+              <Rating className='rate rt' />
+              <h5> <span></span> desconto</h5>
+              <h5> <span></span> Disponivel</h5>
+
+            </div>
+            <div className='ctrl'>
+              <button><Tv/></button>
+              <button><Favorite/></button>
+            </div>
+          </div>
+
+<div className='item'>
+            <div className='img'>
+              <img src={img} alt='' />
+            </div>
+            <div className='details'>
+              <h2>Relógio Ultra</h2>
+              <h5>Produto</h5>
+              <h5>3 meses atras</h5>
+              <h5><Person/> Fabricio Marcos</h5>
+              <h5><Money/> 15.000.00 kz</h5>
+              
+              <Rating className='rate rt' />
+              <h5> <span></span> desconto</h5>
+              <h5> <span></span> Disponivel</h5>
+
+            </div>
+            <div className='ctrl'>
+              <button><Tv/></button>
+              <button><Favorite/></button>
+            </div>
+          </div>
+          <div className='item'>
+            <div className='img'>
+              <img src={img} alt='' />
+            </div>
+            <div className='details'>
+              <h2>Relógio Ultra</h2>
+              <h5>Produto</h5>
+              <h5>3 meses atras</h5>
+              <h5><Person/> Fabricio Marcos</h5>
+              <h5><Money/> 15.000.00 kz</h5>
+              
+              <Rating className='rate rt' />
+              <h5> <span></span> desconto</h5>
+              <h5> <span></span> Disponivel</h5>
+
+            </div>
+            <div className='ctrl'>
+              <button><Tv/></button>
+              <button><Favorite/></button>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
           </Grid>
           {/* Lado Direito da Tela */}
+         
+
+
+
           <Grid item xs={6} md={9}>
             {/* End hero unit */}
+
             <Grid container spacing={1}>
               {currentItens.map((produto) => (
                 <Produto key={produto.id} caminho={'http://localhost:3003/Images/' + produto.imagem} stars={3} preco={produto.preco} nome={produto.nome} />

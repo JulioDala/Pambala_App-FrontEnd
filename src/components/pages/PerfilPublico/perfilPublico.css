@@ -1,12 +1,21 @@
 .PerfilPublico {
-    display: flex;
     padding: 10px;
+    background: whitesmoke;
+    height: 100vh;
+    width: 30vw;
+}
+
+.PublicPhoto{
+    display: flex;
+    justify-content: center;
 }
 
 .PublicPhoto img {
     border: 2px solid rgb(26, 95, 192);
     width: 160px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .PublicData {
@@ -15,6 +24,8 @@
 }
 
 .PublicName {
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -27,12 +38,22 @@
 }
 
 
-.PublicContact span {
+.PublicContact{
+    text-align: center;
+}
+
+.PublicContact h5{
     font-weight: 500;
     margin-right: 10px;
 }
 
-.PublicLocation span {
+.PublicLocation{
+    text-align: center;
+    margin: 10px;
+    display: block;
+}
+
+.PublicLocation h5 {
     margin: 10px;
     display: block;
 }
@@ -43,23 +64,92 @@
 
 .PublicChat{
     padding: 20px;
-    display: flex;
-    justify-content: center;
 }
 
 .PublicChat button{
+    margin: 5px;
+    display: block;
     border: none;
     color: white;
-    border-radius: 50%;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.2rem;
     padding: 10px;
     background: rgb(26, 95, 192);
 }
 
 .IconPublicChat{
-    font-size: 25px !important;
+    font-size: 20px !important;
 }
 
 .PublicLC{
+}
+
+.PP{
     display: flex;
-    justify-content: space-between;
+}
+
+.PP-1{
+    width: 100%;
+}
+
+.ContainerCard{
+    width: 100%;
+    display: flex;
+    background: white;
+}
+
+.ContainerCard .Card{
+    background: whitesmoke;
+    width: 15vw;
+    margin: 5px;
+}
+
+.ContainerCard .Card .image{
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    background: cornflowerblue;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.ContainerCard .Card .image img{
+    display: flex;
+    width: 100%;
+}
+
+.ContainerCard .Card .type{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.ContainerCard .Card .name{
+    display: flex;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.ContainerCard .Card .timer{
+    display: flex;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.ContainerCard .Card .person{
+    display: flex;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.ContainerCard .Card .rate{
+    display: flex;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.Card h4{
+    color: rgb(146, 145, 145);
 }

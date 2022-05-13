@@ -14,18 +14,18 @@ import Settings from '@mui/icons-material/Settings'
 import Door from '@mui/icons-material/DoorBack'
 import Chat from '@mui/icons-material/Chat'
 
-import Logo from '../../../../logo.png';
+import Logo from '../../../../logoAdm.png';
 
 export default function SideBarAdm() {
     return (
         <>
             <div className='SideBarAdm'>
-                
-                <div>
+                <div className="Logo">
+                  <img src={Logo} alt="Logo" />
+                </div>
+                <div className="Menu">
                     <ul>
                        <Link to='/adm' className='lSBA'>  <Home className='i'/> <li> Dashboard  </li> </Link>
-                       <Link to='/adm/Usuarios' className='lSBA'>  <User className='i'/> <li> Perfil  </li> </Link>
-                       <Link to='/adm/Usuarios' className='lSBA'>  <Chat className='i'/> <li> Chat  </li> </Link>
                        <Link to='/adm/Usuarios' className='lSBA'>  <User className='i'/> <li> Usuários  </li> </Link>
                        <Link to='/adm/Notificacoes' className='lSBA'>  <Notifications className='i'/> <li> Notificações  </li> </Link>
                        <Link to='/adm/Denuncias' className='lSBA'>  <Policy className='i'/> <li> Denuncias  </li> </Link>

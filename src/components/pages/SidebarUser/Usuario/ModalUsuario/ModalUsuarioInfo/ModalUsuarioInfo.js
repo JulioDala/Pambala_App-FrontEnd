@@ -5,19 +5,15 @@ export default function ModalUsuarioInfo({ closeModal }) {
     return (
         <div className="modalBackground">
             <div className="modalContainer">
-                <div className="titleCloseBtn">
-                    <button onClick={() => closeModal(false)} > X </button>
-                </div>
                 <div className="modalBody">
-                    <form>
+                    <form className="frm">
                         <input type='text' placeholder="Nome pessoal" />
                         <input type='date' placeholder="Nascimento" />
                         <input type='text' placeholder="Sexo" />
                         <input type='text' placeholder="País" />
                         <input type='text' placeholder="Provincia" />
                         <input type='text' placeholder="Municipio" />
-                        <input type='text' placeholder="Bairro" />
-                        
+                        <input type='text' placeholder="Bairro" />                        
                     </form>
 
                 </div>

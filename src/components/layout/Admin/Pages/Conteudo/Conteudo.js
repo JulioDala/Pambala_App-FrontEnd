@@ -1,7 +1,6 @@
 import React from 'react'
 import './conteudo.css'
 
-import { Link } from 'react-router-dom';
 import Star from '@mui/icons-material/Star'
 
 export default function PageConteudo() {
@@ -19,17 +18,23 @@ export default function PageConteudo() {
                                 <h4> PAMBALA </h4>
                             </div>
                             <div>
-                                <h4>
+                                <h3>
                                     A aplicação Pambala recebeu uma avaliação de <b>Manuel Roda</b> apartir da sua conta.
-                                </h4>
+                                </h3>
                                 <h3>Avaliação</h3>
                                 <div className='prtConteudo'>
                                     <Star className='i' />
                                     <Star className='i' />
                                     <Star className='i' />
+                                    <Star className='i' /> 
                                     <Star className='i' />
-                                    <Star className='i' />
+                                   
                                 </div>
+                                <h4>
+                                        
+                                            "Otimo app. Consigo facilmente postar os meus produtos!"
+                                       
+                                    </h4>
                                 <h4>
                                     Continue melhorando o desempenho da aplicação e nos atraia novos usuarios.
                                 </h4>

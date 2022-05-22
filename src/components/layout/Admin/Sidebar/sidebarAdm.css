@@ -49,8 +49,9 @@
 }
 
 .SideBarAdm div ul .lSBA:hover{
-    background: whitesmoke;
-    color: rgba(32, 112, 204, 0.913);
+    border-left: 2px solid white;
+    color: white;
+    transform: scale(1);
 }
 
 .SideBarAdm div ul li{

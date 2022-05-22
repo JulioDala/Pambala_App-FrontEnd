@@ -1,0 +1,130 @@
+.CdrAgente{
+    width: 80%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 3s;
+}
+
+.CdrAgente .container{
+	width: 80%;
+    height: 75%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px rgb(189, 189, 189);
+    overflow: auto;
+
+
+}
+
+.CdrAgente .container .bd{
+    justify-content: space-around;
+}
+
+.CdrAgente .container .bd .FC{
+    justify-content: space-between;
+    width: 100%;
+}
+
+.CdrAgente .container .bd .FC .Foto{
+    display: flex;
+    justify-content: center;
+}
+
+.CdrAgente .container button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    background: cornflowerblue;
+}
+
+.CdrAgente .container .bd .FC .Conteudo{
+    display: flex;
+    width: 100%;
+    justify-content: left;
+}
+
+.CdrAgente .container .bd .FC .Conteudo fieldset{
+    border-radius: 10px;
+}
+
+.CdrAgente .container .bd .FC .Conteudo fieldset legend{
+    color: cornflowerblue;
+}
+
+.CdrAgente .container .bd .FC .Conteudo .spc{
+    width: 100%;
+}
+
+.CdrAgente .container .bd .FC .Conteudo .space{
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 3px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.CdrAgente .container .bd .FC .Conteudo .space:nth-last-child(1){ 
+    border-bottom: 0px solid whitesmoke;
+}
+
+.CdrAgente .container .bd .FC .Conteudo .space:nth-last-child(1){ 
+    border-bottom: 0px solid whitesmoke;
+    
+    margin-bottom: 0px;
+    
+}
+
+.CdrAgente .container .bd .FC .Conteudo .space h6{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.CdrAgente .container .bd .FC .Conteudo .space h4{    
+    font-weight: 500;
+}
+
+
+.CdrAgente .container .bd .FC .Foto{
+    
+    background: linear-gradient(0deg, #fff 50%, var(--blue) 50%);
+}
+
+.CdrAgente .container .bd .FC .Foto img{
+    width: 150px;
+    border-radius: 50%;
+    border: 2px cornflowerblue solid;
+    
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.CdrAgente .container input{
+	width: 100%;
+	padding: 10px;
+	border: cornflowerblue 1px solid;
+	border-radius: 5px;
+}
+
+.CdrAgente .container select{
+	width: 100%;
+	padding: 10px;
+
+	border: cornflowerblue 1px solid;
+	border-radius: 5px;
+}

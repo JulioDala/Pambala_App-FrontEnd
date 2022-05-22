@@ -582,12 +582,39 @@ html{
 }
 
 
+.video{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.containerVideo{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.containerVideo video{
+    border-radius: 5px; 
+}
 
 
+.containerVideo button{
+    color: blue;
+    border: none;
+    background: transparent;
+    font-size: 3rem;
+}
 
 
+.containerVideo button .ICON{
+    font-size: 3rem;
+    transform: rotate(180deg);
+}
 
 
+.containerVideo button .ICON1{
+    font-size: 3rem;
+}
 
 
 

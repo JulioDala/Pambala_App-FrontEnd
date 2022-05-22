@@ -10,9 +10,10 @@
 .srv .cbtn button{
     padding: 5px;
     border: none;
-    background: cornflowerblue;
+    background: #2196F3;
     color: white;
     border-radius: 5px;
+    margin: 5px;
 }
 
 .srv .frm{
@@ -34,23 +35,56 @@
     padding: 5px;
 }
 
+.cfrm{
+    padding: 10px;
+}
+
 .cfrm table{
     width: 100%;
 }
 
 .cfrm table tr:nth-child(1) {
-    background: cornflowerblue;
+    background: #2196F3;
+    color: white;
+    font-size: 1.5rem;
+    border: 2px solid #2196F3;
+}
+
+
+.cfrm table tr:nth-child(1):hover {
+    background: #2196F3;
     color: white;
     font-size: 1.5rem;
 }
 
 .cfrm table tr{
     background: white;
+    border-bottom: 1px solid whitesmoke;
+    border-left: 2px solid white;
 
+    transition: transform 0.3s;
+    
+}
+
+.cfrm table tr td {
+    font-size: 1.2rem;  
+}
+
+.cfrm table tr:hover {    
+    background: whitesmoke;
+    border-left: 2px solid #2196F3;
+    cursor: pointer;
+}
+
+.cfrm table tr td img{    
+    border: 1px solid #2196F3;
+    width: 40px;
+    border-radius: 50%;
+    background: white;    
 }
 
 .cfrm table tr td button{
     margin: 5px;
     border: none;
-    background: white;    
+    background: transparent;    
 }

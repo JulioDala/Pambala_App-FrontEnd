@@ -109,6 +109,9 @@ function Loja() {
     setAge(event.target.value);
   };
 
+
+const vetor = [{nome:"Júlio Dala"},{nome:"João Dala"},{nome:"Josué Rufino"},{nome:"Júlio Dala"},{nome:"Júlio Dala"},{nome:"Júlio Dala"},{nome:"Júlio Dala"},{nome:"Júlio Dala"},{nome:"Júlio Dala"},{nome:"Júlio Dala"}]
+
   return (
     <ThemeProvider theme={mdTheme}>
       <Navbar />     
@@ -218,136 +221,32 @@ function Loja() {
               </CardContent>
             </Card>
 
-
-
-<div className='CardProduts'  data-aos="fade-left" >
-        <div className='Card'>
-          <div className='item'>
-            <div className='img'>
-              <img src={img} alt='' />
-            </div>
-            <div className='details'>
-              <h2>Relógio Ultra</h2>
-              <h5>Produto</h5>
-              <h5>3 meses atras</h5>
-              <h5><Person/> Fabricio Marcos</h5>
-              <h5><Money/> 15.000.00 kz</h5>
-
-              <Rating className='rate rt' />
-              <h5> <span></span> desconto</h5>
-              <h5> <span></span> Disponivel</h5>
-
-            </div>
-            <div className='ctrl'>
-              <button><Tv/></button>
-              <button><Favorite/></button>
-            </div>
-          </div>
-
-          <div className='item'>
-            <div className='img'>
-              <img src={img} alt='' />
-            </div>
-            <div className='details'>
-              <h2>Relógio Ultra</h2>
-              <h5>Produto</h5>
-              <h5>3 meses atras</h5>
-              <h5><Person/> Fabricio Marcos</h5>
-              <h5><Money/> 15.000.00 kz</h5>
-              
-              <Rating className='rate rt' />
-              <h5> <span></span> desconto</h5>
-              <h5> <span></span> Disponivel</h5>
-
-            </div>
-            <div className='ctrl'>
-              <button><Tv/></button>
-              <button><Favorite/></button>
-            </div>
-          </div>
-<div className='item'>
-            <div className='img'>
-              <img src={img} alt='' />
-            </div>
-            <div className='details'>
-              <h2>Relógio Ultra</h2>
-              <h5>Produto</h5>
-              <h5>3 meses atras</h5>
-              <h5><Person/> Fabricio Marcos</h5>
-              <h5><Money/> 15.000.00 kz</h5>
-              
-              <Rating className='rate rt' />
-              <h5> <span></span> desconto</h5>
-              <h5> <span></span> Disponivel</h5>
-
-            </div>
-            <div className='ctrl'>
-              <button><Tv/></button>
-              <button><Favorite/></button>
-            </div>
-          </div>
-
-<div className='item'>
-            <div className='img'>
-              <img src={img} alt='' />
-            </div>
-            <div className='details'>
-              <h2>Relógio Ultra</h2>
-              <h5>Produto</h5>
-              <h5>3 meses atras</h5>
-              <h5><Person/> Fabricio Marcos</h5>
-              <h5><Money/> 15.000.00 kz</h5>
-              
-              <Rating className='rate rt' />
-              <h5> <span></span> desconto</h5>
-              <h5> <span></span> Disponivel</h5>
-
-            </div>
-            <div className='ctrl'>
-              <button><Tv/></button>
-              <button><Favorite/></button>
-            </div>
-          </div>
-          <div className='item'>
-            <div className='img'>
-              <img src={img} alt='' />
-            </div>
-            <div className='details'>
-              <h2>Relógio Ultra</h2>
-              <h5>Produto</h5>
-              <h5>3 meses atras</h5>
-              <h5><Person/> Fabricio Marcos</h5>
-              <h5><Money/> 15.000.00 kz</h5>
-              
-              <Rating className='rate rt' />
-              <h5> <span></span> desconto</h5>
-              <h5> <span></span> Disponivel</h5>
-
-            </div>
-            <div className='ctrl'>
-              <button><Tv/></button>
-              <button><Favorite/></button>
-            </div>
-          </div>
-
-
-
-        </div>
-      </div>
           </Grid>
           {/* Lado Direito da Tela */}
-         
-
-
-
+       
           <Grid item xs={6} md={9}>
             {/* End hero unit */}
 
-            <Grid container spacing={1}>
-              {currentItens.map((produto) => (
-                <Produto key={produto.id} caminho={'http://localhost:3003/Images/' + produto.imagem} stars={3} preco={produto.preco} nome={produto.nome} />
-              ))}
-            </Grid>
+               <div className='CardProduts'  data-aos="fade-left" >
+        <div className='Card'>
+          {vetor.map(({nome})=>(
+            <div className='item'>
+            <div className='img'>
+              <img src={img} alt='' />
+            </div>
+            <div className='details'>
+              <h2>Relógio Ultra  <button><Favorite/></button> </h2> 
+              <h5>Produto</h5>
+              <h5>3 meses atras</h5>
+              <h5><Person/> {nome}</h5>
+              <h5><Money/> 15.000.00 kz</h5>
+
+              <Rating className='rate rt' />
+                  </div>
+          </div>
+            ))}
+        </div>
+      </div>
           </Grid>
 
         </Grid>

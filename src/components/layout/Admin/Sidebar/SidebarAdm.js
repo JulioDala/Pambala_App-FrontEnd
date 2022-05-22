@@ -33,6 +33,7 @@ export default function SideBarAdm() {
                 </div>
                 <div>
                     <ul>                       
+                    <Link to='/adm/Agentes' className='lSBA'>  <DynamicFeed className='i'/> <li> Agentes  </li> </Link>
                        <Link to='/adm/Categorias' className='lSBA'>  <DynamicFeed className='i'/> <li> Produtos  </li> </Link>
                        <Link to='/adm/Servicos' className='lSBA'>  <Business className='i'/> <li> Serviços  </li> </Link>
                        <Link to='/adm/Definicoes' className='lSBA'>  <Settings className='i'/> <li> Definições  </li> </Link>

@@ -1,0 +1,72 @@
+.PerfilUser{
+	background: rgba(0, 0, 0, 0.4 );
+	width: 80vw;
+	height: 100vh;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0px;
+}
+
+.PerfilUser .container{
+	background: white;
+	border: 1px solid #2196F3;
+	width: 20vw;
+	height: 55vh;
+	border-radius: 5px;
+	margin: 0;
+	padding: 0px;
+	box-shadow: 1px rgba(0,0,0,.1);
+	filter: drop-shadow(0 .1rem .5rem #000);
+	overflow: hidden;
+}
+
+
+.PerfilUser .container .img{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	width: 100%;
+    background: linear-gradient(0deg, #fff 50%, var(--blue) 50%);
+}
+
+.PerfilUser .container .img img{
+	display: flex;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 2px solid var(--blue);
+}
+
+
+.PerfilUser .container .content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+.PerfilUser .container .content button{
+	padding: 5px;
+	margin: 5px;
+	width: 90px;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	background: var(--blue);
+	color: white;
+	letter-spacing: 1px;
+}
+
+.PerfilUser .container .content h2{
+	color: var(--blue);
+	font-weight: bold;
+}
+
+.PerfilUser .container .content .dlt{
+	background: red;
+}

@@ -1,0 +1,58 @@
+.sidebar{
+	background: blue;
+	width: 20vw;
+	height: 100vh;
+    position: fixed;
+}
+
+.sidebar .Img{
+	width: 100%;
+	height: 50%;
+
+		display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.sidebar img{
+	width: 150px;
+	height: 150px;
+	margin-top: 50px;
+
+}
+
+.sidebar ul{
+    list-style: none;
+}
+
+
+.sidebar ul li:nth-child(1) img{
+
+}
+
+.sidebar ul .lSBA{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: 600;
+    color: white;
+    border-left: 2px solid transparent;
+}
+
+.sidebar  ul .lSBA .i{
+    font-size: 2rem;
+}
+
+.sidebar  ul .lSBA:hover{
+    border-left: 2px solid white;
+    color: white;
+    background: red;
+}
+
+.sidebar ul li{
+    margin: 0 0 0 10px;
+    text-decoration: none;
+}

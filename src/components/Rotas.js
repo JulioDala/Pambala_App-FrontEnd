@@ -52,11 +52,17 @@ import Adm from './layout/Admin/Admin';
 import PUsuarios from './layout/Admin/Usuarios/Usuarios';
 import PNotificacoes from './layout/Admin/Notificacoes/Notificacoes';
 
+import PAgentes from './layout/Admin/Agentes/Agentes';
 import PDenuncias from './layout/Admin/Denuncias/Denuncias';
 import PProduto from './layout/Admin/Categorias/Produto';
 import PServicos from './layout/Admin/Servicos/Servicos';
 import PDefinicoes from './layout/Admin/Definicoes/Definicoes';
 import PageConteudo from './layout/Admin/Notificacoes/Conteudo/Conteudo';
+
+import Agente from './layout/Agente/Agente.js';
+import ChatAgente from './layout/Agente/Chat.js';
+import PerfilAgente from './layout/Agente/Perfil.js';
+import NotificacoesAgente from './layout/Agente/Notificacoes.js';
 
 function Rotas() {
   return (
@@ -104,6 +110,7 @@ function Rotas() {
 
         {/* Rotas do admin */}
         <Route element={<Adm />} path="/adm" exact />
+        <Route element={<PAgentes />} path="/adm/Agentes" exact />
         <Route element={<PUsuarios />} path="/adm/Usuarios" exact />
         <Route element={<PNotificacoes />} path="/adm/Notificacoes" exact />
         <Route element={<PageConteudo />} path="/adm/Notificacoes/Conteudo" exact />
@@ -118,6 +125,11 @@ function Rotas() {
         <Route element={<Estatisticas />} path="/admin/estatisticas" exact />
         <Route element={<CadastrarAdmin />} path="/admin/usuarios/cadastrar" exact />
         <Route element={<Listar />} path="/admin/usuarios/listar" exact />
+
+        <Route element={<Agente />} path="/Agente" exact />
+        <Route element={<ChatAgente/>} path="/Agente/Chat" exact />
+        <Route element={<PerfilAgente/>} path="/Agente/Perfil" exact />
+        <Route element={<NotificacoesAgente/>} path="/Agente/Notificacoes" exact />
       </Routes>
     </Router>
   );

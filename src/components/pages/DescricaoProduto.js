@@ -24,6 +24,7 @@ import FooterAdmin from '../FooterAdmin';
 import api from '../services/api';
 import Navbar from '../layout/Navbar';
 import './DescricaoProduto.css'
+import Video from './grana.mp4';
 import { useParams, Link } from 'react-router-dom';
 
 
@@ -197,7 +198,24 @@ const DescricaoProduto = () => {
                                 noWrap
                                 sx={{ flexGrow: 1 }}
                             >
-                                Descrição
+                                <h4> Descrição Ola </h4>
+
+
+
+
+
+                               <div className="containerVideo"> 
+
+<button > <SendIcon className='ICON'/> </button>
+
+                                 <video className="video" width="300" height="200" controls>
+                                    <source src={Video} type="video/mp4"/>
+                                </video>
+<button> <SendIcon  className='ICON1'/> </button>
+
+                               </div>
+
+
                             </Typography>
 
                             <Typography>

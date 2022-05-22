@@ -1,0 +1,156 @@
+.Agente{
+	display: flex;
+}
+
+.full{
+	width: 100%;
+}
+
+
+.full .containerAdm{
+    width: 800px;
+    height: 640px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: rgb(189, 189, 189);
+    flex-direction: column;
+    padding: 15px;
+}
+
+.full .containerAdm .bd{
+    display: flex;
+    justify-content: space-around;
+}
+
+.full .containerAdm .bd .FC{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.full .containerAdm .bd .FC .Foto{
+    display: flex;
+    justify-content: end;
+}
+
+.full .containerAdm .bd .FC .Foto button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    background: cornflowerblue;
+}
+
+.full .containerAdm .bd .FC .Conteudo{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: left;
+}
+
+.full .containerAdm .bd .FC .Conteudo fieldset{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    margin-bottom: 3px;
+}
+
+.full .containerAdm .bd .FC .Conteudo fieldset legend{
+    color: cornflowerblue;
+}
+
+.full .containerAdm .bd .FC .Conteudo .spc{
+    width: 100%;
+}
+
+.full .containerAdm .bd .FC .Conteudo .space{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 3px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.full .containerAdm .bd .FC .Conteudo .space:nth-last-child(1){ 
+    border-bottom: 0px solid whitesmoke;
+}
+
+.full .containerAdm .bd .FC .Conteudo .space:nth-last-child(1){ 
+    border-bottom: 0px solid whitesmoke;
+    
+    margin-bottom: 0px;
+    
+}
+
+.full .containerAdm .bd .FC .Conteudo .space h6{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.full .containerAdm .bd .FC .Conteudo .space h4{    
+    font-weight: 500;
+}
+
+.full .containerAdm .bd .FC .Foto img{
+    width: 150px;
+    border-radius: 50%;
+    border: 2px cornflowerblue solid;
+    
+    margin-bottom: 10px;
+}
+
+
+
+
+.Agente .full .lNot{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.full .clNotImg{
+    display: flex;
+}
+
+.full .clNotDate{
+    margin: 0 10px;
+    padding: 0px;
+}
+
+.full .clNotDate h4{
+   color: rgba(32, 112, 204, 0.913);
+   font-weight: 600;
+}
+
+.full .clNotDate h5{
+    color: black;
+ }
+
+ .full .clNotDate h6{
+    color: black;
+ }
+
+.full .clNotImg img{
+    border-radius: 50%;
+    border: 1px solid rgba(32, 112, 204, 0.913);
+}
+
+.full .ccNot .lk{
+
+    border-radius: 10px;
+    background: whitesmoke;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    text-transform: none;
+    margin: 10px;
+}

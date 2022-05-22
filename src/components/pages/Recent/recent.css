@@ -8,8 +8,8 @@
 
 .CardProduts .Card{
 	width: 100vw;
-	display: flex;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(5,1fr); 
 }
 
 .CardProduts .Card .item{
@@ -22,25 +22,24 @@
 
 .CardProduts .Card .item:hover{
 	border: 1px solid rgb(53, 118, 202);
-	box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+	box-shadow: 1px rgba(0,0,0,.3);
 }
 
 .CardProduts .Card .item .img{
 	background: rgb(53, 118, 202);
-	height: 200px;
+	height: 180px;
 }
 
 .CardProduts .Card .item .img img{
 	display: flex;
 	width: 200px;
-	height: 200px;
+	height: 180px;
 	border-bottom: 2px solid rgb(53, 118, 202);
 	transition: 0.3s;
 }
 
 .CardProduts .Card .item .img img:hover{
 border: 2px solid rgb(53, 118, 202);
-	transform: scale(1.3);
 
 	filter: drop-shadow(0 .1rem .5rem #000);
 
@@ -49,6 +48,7 @@ border: 2px solid rgb(53, 118, 202);
 .CardProduts .Card .item .details h2{
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	padding-left: 5px;
 }
 
@@ -58,6 +58,15 @@ border: 2px solid rgb(53, 118, 202);
 	padding-left: 5px;
 	color: rgb(53, 118, 202);
 	font-weight: 600;
+}
+
+.CardProduts .Card .item .details h2 button{
+	display: flex;
+	background: none;
+	border: none;
+	float: right;
+	padding: 5px;
+	color: rgb(53, 118, 202);
 }
 
 .CardProduts .Card .item .details h5{

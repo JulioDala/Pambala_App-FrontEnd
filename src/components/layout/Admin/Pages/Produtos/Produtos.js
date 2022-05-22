@@ -15,10 +15,11 @@ export default function PProdutosAdm(){
     const [Abr, Fch] = useState(false);
     return(
         <>
+        <div className='Dashboard'>
+        
         { abr && <Produto closeModal={fch} />}
         { Abr && <DelProd closeModal={Fch} />}
-        <div className='Dashboard'>
-            <div>
+            <div className="cfrm">
                 <div className='cmdPdt'> 
                     <div className='cmd'>
                         <button  onClick={() => {fch(true);}}>Adicionar</button>

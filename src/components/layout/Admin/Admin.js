@@ -15,8 +15,7 @@ export default function Administrador() {
                     <SideBarAdm />
                     <Dashboard />
                 </div>
-               </div>
-                
+               </div>                
             </div>
         </>
     )

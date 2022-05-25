@@ -1,15 +1,128 @@
 import React from 'react'
+import Img from '../../../img/frm/perfil.png'
+import img from '../../../img/frm/invasor.png'
+import iMG from '../../../img/frm/group.png'
+
+
+import User from '@mui/icons-material/Edit'
+import Estatistics from '@mui/icons-material/Key'
+import Chat from '@mui/icons-material/Chat'
+
+
+import Delete from '@mui/icons-material/Delete'
+import SelectAll from '@mui/icons-material/Edit'
+
+import {Link} from "react-router-dom"
+import { useState } from 'react'
+
+import Modal from "./Modais/ConfirmarAgenda"
+
 
 function Content(){
+
+	const vetor = [1,2,3]
+
+	const nome  = "João Silvestre Dala"
+	const email  = "JoaoSilvestreDala90@gmail.com"
+	const numero = 923567233
+
+	const [AbrirAgenda, FecharAgenda] = useState(false);
+
+	const nota = "Carla"
 	return(
 		<>
-			<div> 
+		{ AbrirAgenda && <Modal closeModal={FecharAgenda} />}
+			<div className="Content"> 
+				<div className="CardUser">
+					<div className="Agendar"> Agendar </div>
+					<form>
+						<input type="text" placeholder="Nota" name="nota" />
+						<input type="Date" />
+						<input type="time" />
+						<select>
+							<option> Dia </option>
+							<option> Semana </option>
+							<option> Mês </option>
+							<option> Ano </option>
+							<option> Personalizar </option>
+						</select>
+						<input placeholder="Localização" />
+						
+				</form>
+					<button className="button" onClick={() => {FecharAgenda(true);}}> Agendar </button>
+				 </div>
 
 
-1. Termos            Ao acessar ao site Pambala, concorda em cumprir estes termos de serviço, todas as leis e regulamentos aplicáveis ​​e concorda que é responsável pelo cumprimento de todas as leis locais aplicáveis. Se você não concordar com algum                desses termos, está proibido de usar ou acessar este site. Os materiais contidos neste site são protegidos pelas leis de direitos autorais e marcas comerciais aplicáveis.            2. Uso de Licença            É concedida permissão para baixar temporariamente uma cópia dos materiais (informações ou software) no site Pambala , apenas para visualização transitória pessoal e não comercial. Esta é a concessão de uma licença, não uma transferência de título e,                sob esta licença, você não pode:                         modificar ou copiar os materiais;              usar os materiais para qualquer finalidade comercial ou para exibição pública (comercial ou não comercial);              tentar descompilar ou fazer engenharia reversa de qualquer software contido no site Pambala;              remover quaisquer direitos autorais ou outras notações de propriedade dos materiais; ou              transferir os materiais para outra pessoa ou 'espelhe' os materiais em qualquer outro servidor.                        Esta licença será automaticamente rescindida se você violar alguma dessas restrições e poderá ser rescindida por Pambala a qualquer momento. Ao encerrar a visualização desses materiais ou após o término desta licença, você deve apagar todos os materiais                baixados em sua posse, seja em formato eletrónico ou impresso.            3. Isenção de responsabilidade                        Os materiais no site da Pambala são fornecidos 'como estão'. Pambala não oferece garantias, expressas ou implícitas, e, por este meio, isenta e nega todas as outras garantias, incluindo, sem limitação, garantias implícitas ou condições de comercialização,            adequação a um fim específico ou não violação de propriedade intelectual ou outra violação de direitos.             Além disso, o Pambala não garante ou faz qualquer representação relativa à precisão, aos resultados prováveis ​​ou à confiabilidade do uso dos            materiais em seu site ou de outra forma relacionado a esses materiais ou em sites vinculados a este site.                        4. Limitações            Em nenhum caso o Pambala ou seus fornecedores serão responsáveis ​​por quaisquer danos (incluindo, sem limitação, danos por perda de dados ou lucro ou devido a interrupção dos negócios) decorrentes do uso ou da incapacidade de usar os materiais em Pambala,                mesmo que Pambala ou um representante autorizado da Pambala tenha sido notificado oralmente ou por escrito da possibilidade de tais danos. Como algumas jurisdições não permitem limitações em garantias implícitas, ou limitações de responsabilidade                por danos conseqüentes ou incidentais, essas limitações podem não se aplicar a você.            5. Precisão dos materiais            Os materiais exibidos no site da Pambala podem incluir erros técnicos, tipográficos ou fotográficos. Pambala não garante que qualquer material em seu site seja preciso, completo ou atual. Pambala pode fazer alterações nos materiais contidos em seu                site a qualquer momento, sem aviso prévio. No entanto, Pambala não se compromete a atualizar os materiais.            6. Links            O Pambala não analisou todos os sites vinculados ao seu site e não é responsável pelo conteúdo de nenhum site vinculado. A inclusão de qualquer link não implica endosso por Pambala do site. O uso de qualquer site vinculado é por conta e risco do usuário.                        Modificações            O Pambala pode revisar estes termos de serviço do site a qualquer momento, sem aviso prévio. Ao usar este site, você concorda em ficar vinculado à versão atual desses termos de serviço.            Lei aplicável            Estes termos e condições são regidos e interpretados de acordo com as leis do Pambala e você se submete irrevogavelmente à jurisdição exclusiva dos tribunais naquele estado ou localidade.
+				 <div className="CardUser">
+					<div className="Agendar"> Tarefas </div>
+					<div className="a">
+						<img src={iMG} alt="" />
+					</div>
+						<div className="span">
+							<b>Agente</b> da aplicação é uma entidade que serve de intermediario entre o vendedor e a pessoa que deseja comprar o produto ou adquirir os serviços anunciados na aplicação.
+							</div>
+					<button className="button"> Ver mais </button>
+					
+				 </div>
+
+				
+				  <div className="CardUser">
+					<div className="Agendar">
+						Agente
+					</div>
+					<div className="a">
+						<img src={img} alt="" />
+					</div>
+					<div className="d">
+						<h2> {nome} </h2>
+						<h5> {email} </h5>
+						<h5> +244 {numero}</h5>
+							<Link to="/Agente/Perfil" className="link"> <button>  <User className="i"/> </button></Link>
+							<Link to="/Agente/Chat" className="link"> <button>  <Chat className="i"/> </button> </Link>
+							<Link to="/Agente/Perfil" className="link"> <button>  <Estatistics className="i"/> </button></Link>
+					</div>
+					
+
+				 </div>
 
 
+			 </div>
+			 
+			 
+<div className="Content">
+<h3> Agendamentos </h3>
+			 </div>
+			 <div className="Content">
 
+			 	<table>			 		
+			 				 				 
+                             <tr>
+                             <td>Nota</td>
+                                <td>Data</td>
+                                <td>Hora</td>
+                                <td>Tempo de Registro</td>
+                                <td>Localidade</td>
+                                <td>Ações</td>
+                            </tr>
+
+                            {vetor.map((nome)=>(
+                            <tr>
+                            <td>Issengo</td>
+                                <td>22 / 01 / 2022</td>
+                                <td>12:30</td>
+                                <td>Semana</td>
+                                
+                                <td>
+                                Sambizanga
+                                    
+                                </td>
+                                <td>
+                                    <button> <SelectAll/> </button>
+                                    <button> <Delete/> </button>
+                                </td>
+                            </tr>
+                            ))}
+			 	</table>
 			 </div>
 		</>
 		)

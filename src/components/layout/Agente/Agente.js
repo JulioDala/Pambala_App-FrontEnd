@@ -8,8 +8,8 @@ function Agente(){
 	return(
 		<>
 			<div className='Agente'>
-				<div> <SideBar/> </div> 
-				<div> <Content/> </div> 
+				<div className="SIDEBAR"> <SideBar/> </div> 
+				<div className="CONTENT"> <Content/> </div> 
 			</div>
 		</>
 		)

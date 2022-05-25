@@ -1,8 +1,7 @@
 .sidebar{
-	background: blue;
+	background: var(--blue);
 	width: 20vw;
 	height: 100vh;
-    position: fixed;
 }
 
 .sidebar .Img{
@@ -49,8 +48,9 @@
 .sidebar  ul .lSBA:hover{
     border-left: 2px solid white;
     color: white;
-    background: red;
+    background: blue;
 }
+
 
 .sidebar ul li{
     margin: 0 0 0 10px;

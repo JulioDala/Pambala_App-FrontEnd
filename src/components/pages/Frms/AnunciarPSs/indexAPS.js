@@ -23,12 +23,25 @@ export default function indexAPS({ closeModal }) {
                                 </select>
                                 <div>
                                     <div className='apsUpl'>
-                                        <input type='file' placeholder='Adicionar Imagem' />
-                                        <input type='file' placeholder='Adicionar Imagem' />
+                                        <label for="arquivo1">
+                                            Imagem 1
+                                        </label>
+                                        <label for="arquivo2">
+                                            Imagem 2
+                                        </label>
+                                       
+                                        <input type='file' name="arquivo1" id="arquivo" placeholder='Adicionar Imagem' />
+                                        <input type='file' name="arquivo2" placeholder='Adicionar Imagem' />
                                     </div>
                                     <div className='apsUpl'>
-                                        <input type='file' placeholder='Adicionar Imagem' />
-                                        <input type='file' placeholder='Adicionar Imagem' />
+                                     <label for="arquivo3">
+                                            Imagem 3
+                                        </label>
+                                        <label for="arquivo4">
+                                            Imagem 4
+                                        </label>
+                                        <input type='file' name="arquivo3" placeholder='Adicionar Imagem' />
+                                        <input type='file' name="arquivo4" placeholder='Adicionar Imagem' />
                                     </div>
                                 </div>
                                 <textarea rows='10' placeholder='Descrição'></textarea>

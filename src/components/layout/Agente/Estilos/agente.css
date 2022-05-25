@@ -2,10 +2,205 @@
 	display: flex;
 }
 
+.SIDEBAR{
+	position: fixed;
+	background: var(--blue);
+}
+
+.CONTENT{
+	margin-left: 20vw;
+	position: fixed; 
+}
 .full{
 	width: 100%;
 }
+.Content{
+	display: flex;
+	justify-content: space-around;
+	width: 80vw;
+}
 
+.content .fchM{
+	background: red;
+}
+
+.ione{
+	background: var(--blue);
+	border-radius: 50%;
+	color: white;
+	font-size: 10rem !important;
+}
+.CardUser {
+	border: 1px solid var(--blue);
+	width: 300px;
+	height: 400px;
+	margin: 10px;
+	float: right;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+
+	box-shadow: 1px rgba(0,0,0,.1);
+	filter: drop-shadow(0 .1rem .1rem #000);
+}
+
+.CardUser .u{
+	padding: 25px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	background: linear-gradient(0deg, #fff 50%, var(--blue) 50%);
+}
+
+.CardUser .d{
+	padding: 5px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.CardUser .a{
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.CardUser .d button{
+	background: var(--blue);
+	margin: 5px;
+	padding: 10px;
+	border-radius: 50%;
+	border: 2px solid white;
+	color: white;
+}
+
+.CardUser .d button:hover{
+	background: blue;
+}
+
+.CardUser .d .link{
+	list-style: none;
+	color: none;
+	line-height: none;
+	background: none;
+	text-decoration: none;
+}
+
+.CardUser .d button .i{
+	font-size: 2rem;
+}
+
+.CardUser .img{
+	display: flex;
+	border-radius: 50%;
+	border: 1px solid white;
+	height: 80px;
+
+}
+
+.CardUser .span{
+	
+	margin: 10px;
+	text-transform: initial;
+	text-align: justify;
+	text-decoration: all;
+	font-size: 1.48rem;
+}
+
+.CardUser img{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid white;
+	height: 140px;
+
+}
+
+
+
+
+.Content table{
+    width: 90%;
+    margin: 5px;
+
+	box-shadow: 1px rgba(0,0,0,.1);
+	filter: drop-shadow(0 .1rem .2rem #000);
+}
+
+.Content table tr:nth-child(1){
+    background: var(--blue);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border: var(--blue) 2px solid;
+}
+
+.Content table tr:nth-child(1):hover{
+    background: var(--blue);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border: var(--blue) 2px solid;
+}
+
+.Content table th{
+    font-size: 1.3rem;
+    background-color: black;
+}
+
+.Content table tr{
+    font-size: 1.3rem;
+    background-color: white;
+    border: 2px solid white;
+}
+
+.Content table tr{
+    font-size: 1.3rem;
+    background-color: white;
+}
+
+.Content table tr td{
+    border-bottom: rgba(0, 119, 255, 0.678) 0.1px solid;
+}
+
+.Content table tr:hover{
+    border-left: var(--blue) 2px solid;
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+.Content table tr td button{
+    border: none;
+    background-color: transparent;
+    padding: 5px 8px;
+
+}
+
+.Content table tr td button:hover{
+    transition: 0.3s;
+    border: none;    
+    border-radius: 50%;
+    padding: 5px 8px;
+    color: rgba(0, 119, 255, 0.678) !important;
+    background: whitesmoke;
+}
+
+.Utable table tr td button .i{
+}
+
+.Usearch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+
+.side{
+}
 
 .full .containerAdm{
     width: 800px;
@@ -153,4 +348,80 @@
     text-decoration: none;
     text-transform: none;
     margin: 10px;
+}
+
+
+.Agendar{
+	background: var(--blue);
+	color: white;
+	padding: 20px;
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.Content .CardUser form{
+	width: 100%;
+	padding: 10px;
+	align-items: center;
+	
+
+}
+
+
+.Content .CardUser form fieldset{
+	
+	
+	padding: 10px;
+	width: 100%;
+
+}
+
+.Content .CardUser form span{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	width: 100%;
+
+}
+
+.Content .CardUser .button{
+	display: flex;
+	align-items: right;
+	float: right;
+	justify-content: center;
+	font-size: 1.5rem;
+	margin: 10px;
+	width: 40%;
+	background: var(--blue);
+	color: white;
+	border-radius: 5px;
+	padding: 5px;
+	border: none;
+
+}
+
+.Content .CardUser form input{	
+	padding: 10px;
+	display: block;
+	margin: 5px;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid var(--blue);
+	font-size: 1.3rem;
+	
+}
+
+.Content .CardUser form select{	
+	padding: 10px;
+	display: block;
+	margin: 5px;
+	width: 100%;
+	font-size: 1.3rem;
+	border-radius: 5px;
+	border: 1px solid var(--blue);
+}
+
+.caixaescuro.active{
+    background: red;
 }

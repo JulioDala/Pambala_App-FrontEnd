@@ -1,0 +1,61 @@
+.Agenda{
+	display: flex;
+	grid-template-columns: repeat(5,1fr);
+}
+.Agenda .agenda{
+	background: white;
+	border: 1px solid #2196F3;
+	width: 250px;
+	height: 45vh;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 0px;
+	box-shadow: 1px rgba(0,0,0,.1);
+	filter: drop-shadow(0 .1rem .2rem #000);
+	overflow: hidden;
+}
+.iones{
+	color: var(--blue);
+	font-size: 10rem !important;
+}
+.Agenda .Agend{
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+}
+
+
+.agenda .cx{
+	text-align: center;
+
+}
+
+.agenda .cx .cmd h6{
+	color: var(--blue);
+
+}
+
+.agenda .cx .cmd .fchM{
+	background: red;
+}
+
+.agenda .cx .cmd{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.agenda .cx .cmd button{
+	padding: 10px;
+	margin: 5px;
+	width: 50%;
+	border-radius: 5px;
+	color: white;
+	background: var(--blue);
+	border: none;
+
+}

@@ -86,6 +86,22 @@
     cursor: pointer;
 }
 
+.APS .apsUpl input{
+    display: none;
+
+}
+
+label{
+    padding: 10px 10px;
+    background: var(--blue);
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
 .APSmodalContainer .modalFooter button:hover{
     
     background: cornflowerblue;

@@ -14,7 +14,7 @@ function Notificacoes(){
 
 		<>
 			<div className='Agente'>
-				<div> <SideBar/> </div> 
+				<div className="side"> <SideBar/> </div> 
 				<div className="full"> 
 
 				{vetor.map(({nome})=>(

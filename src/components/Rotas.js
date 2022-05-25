@@ -63,6 +63,7 @@ import Agente from './layout/Agente/Agente.js';
 import ChatAgente from './layout/Agente/Chat.js';
 import PerfilAgente from './layout/Agente/Perfil.js';
 import NotificacoesAgente from './layout/Agente/Notificacoes.js';
+import Agenda from './layout/Agente/Agenda.js';
 
 function Rotas() {
   return (
@@ -130,6 +131,7 @@ function Rotas() {
         <Route element={<ChatAgente/>} path="/Agente/Chat" exact />
         <Route element={<PerfilAgente/>} path="/Agente/Perfil" exact />
         <Route element={<NotificacoesAgente/>} path="/Agente/Notificacoes" exact />
+        <Route element={<Agenda/>} path="/Agente/Agenda" exact />
       </Routes>
     </Router>
   );
